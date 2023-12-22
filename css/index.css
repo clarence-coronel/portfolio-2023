@@ -132,6 +132,7 @@ body header {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition-duration: 200ms;
 }
 .lower-header .contact-item button:hover {
   cursor: pointer;
@@ -152,9 +153,8 @@ body header {
   color: white;
   border: 1px solid #8d8d8d;
   border-radius: 5px 0 0 5px;
-  padding: 0.4vh 0.4vw;
-  transition-duration: 200ms;
-  font-size: 0.9rem;
+  padding: 0.5vh 0.5vw;
+  font-size: 0.8rem;
 }
 .lower-header a, .lower-header a:visited, .lower-header a:hover {
   text-decoration: none;
