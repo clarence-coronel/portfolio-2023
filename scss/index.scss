@@ -1,0 +1,200 @@
+@import "./variables";
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    color: $primary-font-clr;
+}
+
+:root{
+    font-size: 16px;
+}
+
+::selection {
+    background-color: darken($color: $tag-font-clr, $amount: 5);
+    color: $tag-bg-clr; /* Optional: Change the text color within the highlighted area */
+}
+
+body{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: max(4vw, 100px);
+    background-color: $bg-clr;
+
+    header, .scrollable-content{
+        display: flex;
+        flex-flow: column;
+        flex: 0 1 max(500px, 30vw);
+        padding: max(3vh, 100px) 0.5vw;
+    }
+
+    header{
+        position: sticky;
+        top: 0;
+        justify-content: space-between;
+        height: 100vh;
+    }
+}
+
+.upper-header{
+    display: flex;
+    flex-flow: column;
+    gap: max(4vh, 20px);
+
+   .intro{
+        display: flex;
+        flex-flow: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    h1{
+        font-weight: 700;
+        font-size: 3rem;
+    }
+
+    .intro span{
+        font-weight: 700;
+        font-size: 1.5rem;
+        color: $secondary-font-clr;
+    }
+
+    .short-intro{
+        font-size: 1rem;
+    }
+}
+
+// Nav
+.upper-header{
+    nav{
+        display: flex;
+        flex-flow: column;
+        // gap: max(3vh, 15px);
+    }
+    
+    .nav-row{
+        display: flex;
+        flex-flow: row nowrap;
+        width: fit-content;
+        align-items: center;
+        gap: max(0.5vw, 5px);
+        border: none;
+        background-color: transparent;
+        padding: 1vh 0;
+    }
+
+    .nav-row:hover{
+        cursor: pointer;
+    }
+
+    .nav-row span{
+        font-weight: 700;
+        color: $secondary-font-clr;
+    }
+
+    .nav-row .line{
+        height: 1px;
+        width: 50px;
+        background-color: $secondary-font-clr;
+        transition-duration: 200ms;
+    }
+
+    .nav-row:hover .line{
+        background-color: $primary-font-clr;
+        cursor: pointer;
+        width: 90px;
+    }
+
+    .nav-row:hover span{
+        color: $primary-font-clr;
+        cursor: pointer;
+    }
+}
+
+.lower-header{
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1vh;
+
+    .socials{
+        display: flex;
+        flex-flow: row wrap;
+        gap: 0.5vw;
+    }
+
+    .contact-item{
+        display: flex;
+        flex-flow: row nowrap;
+        gap: max(0.2vw, 4px);
+
+        button{
+            border: none;
+            border-radius: 0 5px 5px 0;
+            padding: 0.4vh 0.4vw;
+            font-weight: 700;
+            color: $bg-clr;
+            background-color: $secondary-font-clr;
+            font-size: 0.7rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        button:hover{
+            cursor: pointer;
+            background-color: $primary-font-clr;
+        }
+        
+        button:hover ~ .contact-item {
+            background-color: $primary-font-clr;
+        }
+
+        .material-icons-outlined{
+            font-size: 1rem;
+            color: $bg-clr;
+        }
+    }
+
+    .contact{
+        display: flex;
+        gap: 0.5vw;
+    }
+
+    .contact-content{
+        color: white;
+        // color: $bg-clr;
+        border: 1px solid $secondary-font-clr;
+        border-radius: 5px 0 0 5px;
+        padding: 0.4vh 0.4vw;
+        // background-color: $secondary-font-clr;
+        transition-duration: 200ms;
+        // font-weight: 700;
+        font-size: 0.9rem;
+    }
+
+    // .contact-item:hover{
+    //     cursor: pointer;
+    //     background-color: $primary-font-clr;
+    // }
+
+    a, a:visited, a:hover{
+        text-decoration: none;
+        color: white;
+    }
+    svg{
+        transition-duration: 200ms;
+        fill: $secondary-font-clr;
+    }
+    
+    svg:hover{
+        fill: $primary-font-clr;
+    }
+}
+
+

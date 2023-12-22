@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  color: #FFFFFF;
+}
+
+:root {
+  font-size: 16px;
+}
+
+::-moz-selection {
+  background-color: #00e6d8;
+  color: #035853; /* Optional: Change the text color within the highlighted area */
+}
+
+::selection {
+  background-color: #00e6d8;
+  color: #035853; /* Optional: Change the text color within the highlighted area */
+}
+
+body {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: max(4vw, 100px);
+  background-color: rgb(15, 23, 42);
+}
+body header, body .scrollable-content {
+  display: flex;
+  flex-flow: column;
+  flex: 0 1 max(500px, 30vw);
+  padding: max(3vh, 100px) 0.5vw;
+}
+body header {
+  position: sticky;
+  top: 0;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.upper-header {
+  display: flex;
+  flex-flow: column;
+  gap: max(4vh, 20px);
+}
+.upper-header .intro {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.upper-header h1 {
+  font-weight: 700;
+  font-size: 3rem;
+}
+.upper-header .intro span {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #8d8d8d;
+}
+.upper-header .short-intro {
+  font-size: 1rem;
+}
+
+.upper-header nav {
+  display: flex;
+  flex-flow: column;
+}
+.upper-header .nav-row {
+  display: flex;
+  flex-flow: row nowrap;
+  width: -moz-fit-content;
+  width: fit-content;
+  align-items: center;
+  gap: max(0.5vw, 5px);
+  border: none;
+  background-color: transparent;
+  padding: 1vh 0;
+}
+.upper-header .nav-row:hover {
+  cursor: pointer;
+}
+.upper-header .nav-row span {
+  font-weight: 700;
+  color: #8d8d8d;
+}
+.upper-header .nav-row .line {
+  height: 1px;
+  width: 50px;
+  background-color: #8d8d8d;
+  transition-duration: 200ms;
+}
+.upper-header .nav-row:hover .line {
+  background-color: #FFFFFF;
+  cursor: pointer;
+  width: 90px;
+}
+.upper-header .nav-row:hover span {
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.lower-header {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1vh;
+}
+.lower-header .socials {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 0.5vw;
+}
+.lower-header .contact-item {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: max(0.2vw, 4px);
+}
+.lower-header .contact-item button {
+  border: none;
+  border-radius: 0 5px 5px 0;
+  padding: 0.4vh 0.4vw;
+  font-weight: 700;
+  color: rgb(15, 23, 42);
+  background-color: #8d8d8d;
+  font-size: 0.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lower-header .contact-item button:hover {
+  cursor: pointer;
+  background-color: #FFFFFF;
+}
+.lower-header .contact-item button:hover ~ .contact-item {
+  background-color: #FFFFFF;
+}
+.lower-header .contact-item .material-icons-outlined {
+  font-size: 1rem;
+  color: rgb(15, 23, 42);
+}
+.lower-header .contact {
+  display: flex;
+  gap: 0.5vw;
+}
+.lower-header .contact-content {
+  color: white;
+  border: 1px solid #8d8d8d;
+  border-radius: 5px 0 0 5px;
+  padding: 0.4vh 0.4vw;
+  transition-duration: 200ms;
+  font-size: 0.9rem;
+}
+.lower-header a, .lower-header a:visited, .lower-header a:hover {
+  text-decoration: none;
+  color: white;
+}
+.lower-header svg {
+  transition-duration: 200ms;
+  fill: #8d8d8d;
+}
+.lower-header svg:hover {
+  fill: #FFFFFF;
+}/*# sourceMappingURL=index.css.map */
