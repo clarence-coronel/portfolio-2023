@@ -144,6 +144,9 @@ body header {
 .lower-header .contact-item .material-icons-outlined {
   font-size: 1rem;
   color: rgb(15, 23, 42);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 .lower-header .contact {
   display: flex;
