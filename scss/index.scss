@@ -136,7 +136,7 @@ body{
         button{
             border: none;
             border-radius: 0 5px 5px 0;
-            padding: 0.4vh 0.4vw;
+            padding: 5px;
             font-weight: 700;
             color: $bg-clr;
             background-color: $secondary-font-clr;
@@ -165,7 +165,7 @@ body{
 
     .contact{
         display: flex;
-        gap: 0.5vw;
+        gap: 1vw;
     }
 
     .contact-content{
@@ -173,7 +173,7 @@ body{
         // color: $bg-clr;
         border: 1px solid $secondary-font-clr;
         border-radius: 5px 0 0 5px;
-        padding: 0.5vh 0.5vw;
+        padding: 5px 5px;
         // background-color: $secondary-font-clr;
         // font-weight: 700;
         font-size: 0.8rem;
@@ -199,3 +199,51 @@ body{
 }
 
 
+@media only screen and (max-width: 1200px) {
+    :root{
+        font-size: 14px;
+    }
+
+    body{
+        padding: 4vh 5vw;
+        flex-flow: column;
+        gap: 10vh;
+
+        header{
+            position: unset;
+            padding: 0;
+            justify-content: flex-start;
+            gap: max(4vh, 20px);
+            height: fit-content;
+            flex: unset;
+            // top: 0;
+            // justify-content: space-between;
+            // height: 100vh;
+        }
+
+        .scrollable-content{
+            padding: 0;
+        }
+    }
+
+    header{
+        .upper-header nav{
+            display: none;
+        }
+    }
+
+    .lower-header{
+        .socials .contact-item{
+            button{
+
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    :root{
+        font-size: 12px;
+    }
+
+}
