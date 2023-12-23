@@ -165,7 +165,8 @@ body{
 
     .contact{
         display: flex;
-        gap: 1vw;
+        flex-flow: row wrap;
+        gap: max(1vw, 1vh);
     }
 
     .contact-content{
@@ -207,7 +208,7 @@ body{
     body{
         padding: 4vh 5vw;
         flex-flow: column;
-        gap: 10vh;
+        gap: 7vh;
 
         header{
             position: unset;
@@ -232,6 +233,12 @@ body{
         }
     }
 
+    .upper-header{
+        .short-intro{
+            width: max(60%, 280px);
+        }
+    }
+
     .lower-header{
         .socials .contact-item{
             button{
@@ -241,9 +248,30 @@ body{
     }
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 700px) {
     :root{
         font-size: 12px;
+    }
+
+    .upper-header{
+
+        h1{
+            font-size: 2rem;
+        }
+        // .short-intro{
+        //     width: 100%;
+        // }
+
+        .intro span{
+            font-size: 1.2rem;
+        }
+    }
+
+    .lower-header{
+        .contact{
+            flex-flow: column;
+            gap: 1vh;
+        }
     }
 
 }

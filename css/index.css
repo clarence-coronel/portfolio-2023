@@ -150,7 +150,8 @@ body header {
 }
 .lower-header .contact {
   display: flex;
-  gap: 1vw;
+  flex-flow: row wrap;
+  gap: max(1vw, 1vh);
 }
 .lower-header .contact-content {
   color: white;
@@ -178,7 +179,7 @@ body header {
   body {
     padding: 4vh 5vw;
     flex-flow: column;
-    gap: 10vh;
+    gap: 7vh;
   }
   body header {
     position: unset;
@@ -195,9 +196,22 @@ body header {
   header .upper-header nav {
     display: none;
   }
+  .upper-header .short-intro {
+    width: max(60%, 280px);
+  }
 }
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 700px) {
   :root {
     font-size: 12px;
+  }
+  .upper-header h1 {
+    font-size: 2rem;
+  }
+  .upper-header .intro span {
+    font-size: 1.2rem;
+  }
+  .lower-header .contact {
+    flex-flow: column;
+    gap: 1vh;
   }
 }/*# sourceMappingURL=index.css.map */
