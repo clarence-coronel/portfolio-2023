@@ -1,3 +1,7 @@
+document.addEventListener("DOMContentLoaded", ()=>{
+    listeners();
+})
+
 function copyToClipboard() {
     // Get the text to copy
     var textToCopy = document.querySelector("main").innerText;
@@ -22,4 +26,18 @@ function copyToClipboard() {
 
     // Provide some visual feedback (optional)
     alert("Text copied to clipboard: " + textToCopy);
+}
+
+function listeners(){
+    let light = document.getElementById('light');
+
+    document.addEventListener('mousemove', function(event) {
+        // Get the mouse coordinates
+        var mouseX = event.clientX;
+        var mouseY = event.clientY;
+    
+        // Update the position of the circular div
+        light.style.left = mouseX - light.offsetWidth / 2 + 'px';
+        light.style.top = mouseY - light.offsetHeight / 2 + 'px';
+    });
 }

@@ -4,7 +4,8 @@
   margin: 0;
   padding: 0;
   font-family: "Inter", sans-serif;
-  color: #FFFFFF;
+  color: #d7d5d5;
+  z-index: 1;
 }
 
 :root {
@@ -21,6 +22,17 @@
   color: #035853; /* Optional: Change the text color within the highlighted area */
 }
 
+#light {
+  width: 50vh;
+  height: 50vh;
+  border-radius: 50%;
+  background-color: rgba(4, 35, 90, 0.2);
+  box-shadow: 0 0 100px 150px rgba(4, 35, 90, 0.2);
+  position: fixed;
+  z-index: 0;
+  pointer-events: none; /* To allow interaction with elements beneath the circle */
+}
+
 body {
   display: flex;
   flex-flow: row nowrap;
@@ -28,6 +40,7 @@ body {
   align-items: flex-start;
   gap: max(4vw, 100px);
   background-color: rgb(15, 23, 42);
+  z-index: -1;
 }
 body header, body .scrollable-content {
   display: flex;
@@ -95,12 +108,12 @@ body header {
   transition-duration: 200ms;
 }
 .upper-header .nav-row:hover .line {
-  background-color: #FFFFFF;
+  background-color: #d7d5d5;
   cursor: pointer;
   width: 90px;
 }
 .upper-header .nav-row:hover span {
-  color: #FFFFFF;
+  color: #d7d5d5;
   cursor: pointer;
 }
 
@@ -136,10 +149,10 @@ body header {
 }
 .lower-header .contact-item button:hover {
   cursor: pointer;
-  background-color: #FFFFFF;
+  background-color: #d7d5d5;
 }
 .lower-header .contact-item button:hover ~ .contact-item {
-  background-color: #FFFFFF;
+  background-color: #d7d5d5;
 }
 .lower-header .contact-item .material-icons-outlined {
   font-size: 1rem;
@@ -169,7 +182,7 @@ body header {
   fill: #8d8d8d;
 }
 .lower-header svg:hover {
-  fill: #FFFFFF;
+  fill: #d7d5d5;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -203,6 +216,9 @@ body header {
 @media only screen and (max-width: 700px) {
   :root {
     font-size: 12px;
+  }
+  #light {
+    display: none;
   }
   .upper-header h1 {
     font-size: 2rem;

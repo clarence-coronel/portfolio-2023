@@ -6,6 +6,7 @@
     padding: 0;
     font-family: 'Inter', sans-serif;
     color: $primary-font-clr;
+    z-index: 1;
 }
 
 :root{
@@ -17,6 +18,18 @@
     color: $tag-bg-clr; /* Optional: Change the text color within the highlighted area */
 }
 
+#light{
+    width: 50vh;
+    height: 50vh;
+    border-radius: 50%;
+    background-color: rgba(4, 35, 90, 0.2);
+    // box-shadow: 0 0 50px 200px rgba(255, 255, 255, 0.02);
+    box-shadow: 0 0 100px 150px rgba(4, 35, 90, 0.2);
+    position: fixed;
+    z-index: 0;
+    pointer-events: none; /* To allow interaction with elements beneath the circle */
+}
+
 body{
     display: flex;
     flex-flow: row nowrap;
@@ -24,6 +37,8 @@ body{
     align-items: flex-start;
     gap: max(4vw, 100px);
     background-color: $bg-clr;
+    z-index: -1;
+    
 
     header, .scrollable-content{
         display: flex;
@@ -253,6 +268,10 @@ body{
         font-size: 12px;
     }
 
+    #light{
+        display: none;
+    }
+
     .upper-header{
 
         h1{
@@ -275,3 +294,5 @@ body{
     }
 
 }
+
+
