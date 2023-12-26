@@ -1,3 +1,5 @@
+alert("Website is currently in development")
+
 document.addEventListener("DOMContentLoaded", ()=>{
     listeners();
 })
