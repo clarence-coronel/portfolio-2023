@@ -100,7 +100,7 @@ body{
         flex-flow: row nowrap;
         width: fit-content;
         align-items: center;
-        gap: max(0.5vw, 5px);
+        gap: max(0.8vw, 5px);
         border: none;
         background-color: transparent;
         padding: 1vh 0;
@@ -117,7 +117,7 @@ body{
 
     .nav-row .line{
         height: 1px;
-        width: 50px;
+        width: 40px;
         background-color: $primary-font-clr;
         transition-duration: 200ms;
     }
@@ -125,7 +125,7 @@ body{
     .nav-row:hover .line{
         background-color: $highlight-font-clr;
         cursor: pointer;
-        width: 90px;
+        width: 80px;
     }
 
     .nav-row:hover span{
