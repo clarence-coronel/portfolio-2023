@@ -7,6 +7,10 @@
     font-family: 'Inter', sans-serif;
     color: $primary-font-clr;
     z-index: 1;
+    font-weight: 100;
+    // line-height: min(4vh, 50px);
+    // letter-spacing: 1px;
+    // line-height: 30px;
 }
 
 :root{
@@ -22,9 +26,9 @@
     width: 50vh;
     height: 50vh;
     border-radius: 50%;
-    background-color: rgba(4, 35, 90, 0.2);
+    background-color: rgba(5, 45, 114, 0.2);
     // box-shadow: 0 0 50px 200px rgba(255, 255, 255, 0.02);
-    box-shadow: 0 0 100px 150px rgba(4, 35, 90, 0.2);
+    box-shadow: 0 0 100px 150px rgba(5, 45, 114, 0.2);
     position: fixed;
     z-index: 0;
     pointer-events: none; /* To allow interaction with elements beneath the circle */
@@ -108,24 +112,24 @@ body{
 
     .nav-row span{
         font-weight: 700;
-        color: $secondary-font-clr;
+        color: $primary-font-clr;
     }
 
     .nav-row .line{
         height: 1px;
         width: 50px;
-        background-color: $secondary-font-clr;
+        background-color: $primary-font-clr;
         transition-duration: 200ms;
     }
 
     .nav-row:hover .line{
-        background-color: $primary-font-clr;
+        background-color: $highlight-font-clr;
         cursor: pointer;
         width: 90px;
     }
 
     .nav-row:hover span{
-        color: $primary-font-clr;
+        color: $highlight-font-clr;
         cursor: pointer;
     }
 }
@@ -295,4 +299,12 @@ body{
 
 }
 
+.about{
+    font-size: 1rem;
+    span{
+        font-weight: 500;
+        color: white;
+        font-size: 1rem;
+    }
+}
 

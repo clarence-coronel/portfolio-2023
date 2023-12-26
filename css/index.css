@@ -4,8 +4,9 @@
   margin: 0;
   padding: 0;
   font-family: "Inter", sans-serif;
-  color: #d7d5d5;
+  color: rgba(215, 213, 213, 0.6980392157);
   z-index: 1;
+  font-weight: 100;
 }
 
 :root {
@@ -26,8 +27,8 @@
   width: 50vh;
   height: 50vh;
   border-radius: 50%;
-  background-color: rgba(4, 35, 90, 0.2);
-  box-shadow: 0 0 100px 150px rgba(4, 35, 90, 0.2);
+  background-color: rgba(5, 45, 114, 0.2);
+  box-shadow: 0 0 100px 150px rgba(5, 45, 114, 0.2);
   position: fixed;
   z-index: 0;
   pointer-events: none; /* To allow interaction with elements beneath the circle */
@@ -99,21 +100,21 @@ body header {
 }
 .upper-header .nav-row span {
   font-weight: 700;
-  color: #8d8d8d;
+  color: rgba(215, 213, 213, 0.6980392157);
 }
 .upper-header .nav-row .line {
   height: 1px;
   width: 50px;
-  background-color: #8d8d8d;
+  background-color: rgba(215, 213, 213, 0.6980392157);
   transition-duration: 200ms;
 }
 .upper-header .nav-row:hover .line {
-  background-color: #d7d5d5;
+  background-color: #FFFFFF;
   cursor: pointer;
   width: 90px;
 }
 .upper-header .nav-row:hover span {
-  color: #d7d5d5;
+  color: #FFFFFF;
   cursor: pointer;
 }
 
@@ -149,10 +150,10 @@ body header {
 }
 .lower-header .contact-item button:hover {
   cursor: pointer;
-  background-color: #d7d5d5;
+  background-color: rgba(215, 213, 213, 0.6980392157);
 }
 .lower-header .contact-item button:hover ~ .contact-item {
-  background-color: #d7d5d5;
+  background-color: rgba(215, 213, 213, 0.6980392157);
 }
 .lower-header .contact-item .material-icons-outlined {
   font-size: 1rem;
@@ -182,7 +183,7 @@ body header {
   fill: #8d8d8d;
 }
 .lower-header svg:hover {
-  fill: #d7d5d5;
+  fill: rgba(215, 213, 213, 0.6980392157);
 }
 
 @media only screen and (max-width: 1200px) {
@@ -230,4 +231,12 @@ body header {
     flex-flow: column;
     gap: 1vh;
   }
+}
+.about {
+  font-size: 1rem;
+}
+.about span {
+  font-weight: 500;
+  color: white;
+  font-size: 1rem;
 }/*# sourceMappingURL=index.css.map */
