@@ -2,6 +2,7 @@
 
 document.addEventListener("DOMContentLoaded", ()=>{
     listeners();
+    goToSchoolLink();
 })
 
 function copyToClipboard() {
@@ -42,4 +43,18 @@ function listeners(){
         light.style.left = mouseX - light.offsetWidth / 2 + 'px';
         light.style.top = mouseY - light.offsetHeight / 2 + 'px';
     });
+}
+
+function goToSchoolLink(){
+    let schools = document.querySelectorAll(".education-btn");
+
+    schools.forEach(school=>{
+        
+        school.addEventListener("click", ()=>{
+            if(school.dataset.school == "bsu"){
+                window.open("https://www.bulsu.edu.ph", "_blank");
+            }
+        })
+        
+    })
 }

@@ -48,6 +48,12 @@ body header, body .scrollable-content {
   flex-flow: column;
   flex: 0 1 max(500px, 30vw);
   padding: max(3vh, 100px) 0.5vw;
+  max-width: 600px;
+}
+body .scrollable-content h2 {
+  color: #FFFFFF;
+  font-weight: 700;
+  display: none;
 }
 body header {
   position: sticky;
@@ -204,6 +210,9 @@ body header {
   body .scrollable-content {
     padding: 0;
   }
+  body .scrollable-content h2 {
+    display: unset;
+  }
   header .upper-header nav {
     display: none;
   }
@@ -233,7 +242,7 @@ body header {
   font-size: 1rem;
   display: flex;
   flex-flow: column;
-  gap: max(4vh, 50px);
+  gap: max(1.5vh, 15px);
 }
 .about .about__text span {
   font-weight: 500;
@@ -243,23 +252,36 @@ body header {
 .about .about__education {
   display: flex;
   flex-flow: column;
-  gap: max(2vh, 25px);
+  gap: max(1.5vh, 15px);
+  margin-top: max(3vh, 25px);
 }
 
 .about__education img {
-  height: 80px;
+  height: max(5vw, 60px);
+  max-height: 100px;
 }
-.about__education .education-block {
+.about__education .education-btn {
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
   align-items: center;
   gap: max(2vw, 20px);
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  padding: max(2vh, 5px) max(2vw, 5px);
+  border-radius: 5px;
+  transition-duration: 100ms;
+}
+.about__education .education-btn:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.0705882353);
 }
 .about__education .text-group {
   display: flex;
   flex-flow: column;
-  gap: 0.5vh;
+  gap: max(0.4vh, 5px);
+  text-align: left;
 }
 .about__education .school {
   font-size: 1rem;
@@ -276,4 +298,26 @@ body header {
 }
 .about__education .address, .about__education .course, .about__education .achivement {
   font-size: 0.9rem;
+}
+
+@media only screen and (max-width: 1200px) {
+  .about__education .education-btn {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .about__education img {
+    height: max(5vw, 100px);
+  }
+  .about__education .education-btn {
+    width: 100%;
+    flex-flow: column;
+  }
+  .about__education .text-group {
+    display: flex;
+    flex-flow: column;
+    gap: max(0.4vh, 5px);
+    text-align: left;
+  }
 }/*# sourceMappingURL=index.css.map */
