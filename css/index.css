@@ -10,7 +10,7 @@
 }
 
 :root {
-  font-size: 16px;
+  font-size: 15px;
 }
 
 ::-moz-selection {
@@ -187,9 +187,6 @@ body header {
 }
 
 @media only screen and (max-width: 1200px) {
-  :root {
-    font-size: 14px;
-  }
   body {
     padding: 4vh 5vw;
     flex-flow: column;
@@ -216,7 +213,7 @@ body header {
 }
 @media only screen and (max-width: 700px) {
   :root {
-    font-size: 12px;
+    font-size: 14px;
   }
   #light {
     display: none;
@@ -234,9 +231,49 @@ body header {
 }
 .about {
   font-size: 1rem;
+  display: flex;
+  flex-flow: column;
+  gap: max(4vh, 50px);
 }
-.about span {
+.about .about__text span {
   font-weight: 500;
   color: white;
   font-size: 1rem;
+}
+.about .about__education {
+  display: flex;
+  flex-flow: column;
+  gap: max(2vh, 25px);
+}
+
+.about__education img {
+  height: 80px;
+}
+.about__education .education-block {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: max(2vw, 20px);
+}
+.about__education .text-group {
+  display: flex;
+  flex-flow: column;
+  gap: 0.5vh;
+}
+.about__education .school {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  gap: max(0.4vw, 5px);
+}
+.about__education .schoolyears {
+  font-size: 0.7rem;
+  font-weight: 400;
+}
+.about__education .address, .about__education .course, .about__education .achivement {
+  font-size: 0.9rem;
 }/*# sourceMappingURL=index.css.map */

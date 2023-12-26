@@ -14,7 +14,7 @@
 }
 
 :root{
-    font-size: 16px;
+    font-size: 15px;
 }
 
 ::selection {
@@ -220,9 +220,9 @@ body{
 
 
 @media only screen and (max-width: 1200px) {
-    :root{
-        font-size: 14px;
-    }
+    // :root{
+    //     font-size: 15px;
+    // }
 
     body{
         padding: 4vh 5vw;
@@ -269,7 +269,7 @@ body{
 
 @media only screen and (max-width: 700px) {
     :root{
-        font-size: 12px;
+        font-size: 14px;
     }
 
     #light{
@@ -301,10 +301,60 @@ body{
 
 .about{
     font-size: 1rem;
-    span{
-        font-weight: 500;
-        color: white;
-        font-size: 1rem;
+    display: flex;
+    flex-flow: column;
+    gap: max(4vh, 50px);
+
+    .about__text{
+        span{
+            font-weight: 500;
+            color: white;
+            font-size: 1rem;
+        }
+    }
+
+    .about__education{
+        display: flex;
+        flex-flow: column;
+        gap: max(2vh, 25px);
     }
 }
 
+.about__education{
+    img{
+        height: 80px;
+    }
+
+    .education-block{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        gap: max(2vw, 20px);
+    }
+
+    .text-group{
+        display: flex;
+        flex-flow: column;
+        gap: 0.5vh;
+    }
+
+    .school{
+        font-size: 1rem;
+        font-weight: 700;
+        color: $highlight-font-clr;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        gap: max(0.4vw, 5px);
+    }
+
+    .schoolyears{
+        font-size: 0.7rem;
+        font-weight: 400;
+    }
+
+    .address, .course, .achivement{
+        font-size: 0.9rem;
+    }
+}
