@@ -52,6 +52,18 @@ body{
         max-width: 600px;
     }
 
+    main{
+        display: flex;
+        flex-flow: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: max(10vh, 50px);
+    }
+
+    .scrollable-content{
+        gap: max(10vh, 50px);
+    }
+    
     .scrollable-content h2{
         color: $highlight-font-clr;
         font-weight: 700;

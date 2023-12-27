@@ -51,6 +51,16 @@ body header, body .scrollable-content {
   padding: max(3vh, 100px) 0.5vw;
   max-width: 600px;
 }
+body main {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: max(10vh, 50px);
+}
+body .scrollable-content {
+  gap: max(10vh, 50px);
+}
 body .scrollable-content h2 {
   color: #FFFFFF;
   font-weight: 700;
