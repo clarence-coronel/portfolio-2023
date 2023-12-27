@@ -15,12 +15,12 @@
 }
 
 ::-moz-selection {
-  background-color: #00e6d8;
+  background-color: #4df5ea;
   color: #035853; /* Optional: Change the text color within the highlighted area */
 }
 
 ::selection {
-  background-color: #00e6d8;
+  background-color: #4df5ea;
   color: #035853; /* Optional: Change the text color within the highlighted area */
 }
 
@@ -281,15 +281,15 @@ body header {
 }
 .about .resume-link:hover {
   gap: 0.8vw;
-  color: #FFFFFF;
+  color: #65f6ed;
 }
 .about .resume-link .material-icons-outlined {
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   font-weight: 700;
   color: rgba(215, 213, 213, 0.6980392157);
 }
 .about .resume-link:hover .material-icons-outlined {
-  color: #FFFFFF;
+  color: #65f6ed;
 }
 
 .about__education img {
@@ -313,6 +313,9 @@ body header {
   cursor: pointer;
   background-color: rgba(255, 255, 255, 0.0705882353);
 }
+.about__education .education-btn:hover .school, .about__education .education-btn:hover .material-icons-outlined {
+  color: #65f6ed;
+}
 .about__education .text-group {
   display: flex;
   flex-flow: column;
@@ -326,13 +329,19 @@ body header {
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
-  gap: max(0.4vw, 5px);
+  align-items: center;
+  gap: max(0.2vw, 2px);
+  transition-duration: 100ms;
 }
-.about__education .schoolyears {
+.about__education .school .material-icons-outlined {
   font-size: 0.7rem;
-  font-weight: 400;
+  color: #FFFFFF;
+  transition-duration: 100ms;
 }
-.about__education .address, .about__education .course, .about__education .achivement {
+.about__education .education-btn:hover .school .material-icons-outlined {
+  transform: translate(4px, -4px);
+}
+.about__education .address, .about__education .course, .about__education .achivement, .about__education .years {
   font-size: 0.9rem;
 }
 

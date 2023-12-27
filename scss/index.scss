@@ -357,18 +357,18 @@ body{
 
     .resume-link:hover{
         gap: 0.8vw;
-        color: $highlight-font-clr;
+        color: $tag-font-clr;;
         // border-bottom: 1px solid $tag-font-clr;
     }
 
     .resume-link .material-icons-outlined{
-        font-size: 0.9rem;
+        font-size: 0.7rem;
         font-weight: 700;
         color: $primary-font-clr;
     }
 
     .resume-link:hover .material-icons-outlined{
-        color: $highlight-font-clr;
+        color: $tag-font-clr;
     }
     
 }
@@ -399,6 +399,10 @@ body{
         background-color: #ffffff12;
     }
 
+    .education-btn:hover .school, .education-btn:hover .material-icons-outlined{
+        color: $tag-font-clr;
+    }
+
     .text-group{
         display: flex;
         flex-flow: column;
@@ -413,15 +417,22 @@ body{
         display: flex;
         flex-flow: row nowrap;
         justify-content: flex-start;
-        gap: max(0.4vw, 5px);
+        align-items: center;
+        gap: max(0.2vw, 2px);
+        transition-duration: 100ms;
     }
 
-    .schoolyears{
+    .school .material-icons-outlined{
         font-size: 0.7rem;
-        font-weight: 400;
+        color: $highlight-font-clr;
+        transition-duration: 100ms;
     }
 
-    .address, .course, .achivement{
+    .education-btn:hover .school .material-icons-outlined{
+        transform: translate(4px, -4px);
+    }
+
+    .address, .course, .achivement, .years{
         font-size: 0.9rem;
     }
 }

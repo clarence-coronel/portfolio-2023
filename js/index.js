@@ -94,6 +94,9 @@ function goToSchoolLink(){
             if(school.dataset.school == "bsu"){
                 window.open("https://www.bulsu.edu.ph", "_blank");
             }
+            else if(school.dataset.school == "yanga"){
+                window.open("https://dyci.edu.ph", "_blank");
+            }
         })
         
     })
