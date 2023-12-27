@@ -8,6 +8,7 @@
     color: $primary-font-clr;
     z-index: 1;
     font-weight: 100;
+    text-decoration: none;
     // line-height: min(4vh, 50px);
     // letter-spacing: 1px;
     // line-height: 30px;
@@ -172,11 +173,22 @@ body{
 
         button:hover{
             cursor: pointer;
-            background-color: $primary-font-clr;
+            background-color: $highlight-font-clr;
         }
-        
-        button:hover ~ .contact-item {
-            background-color: $primary-font-clr;
+
+        .copied{
+            background-color: rgb(35, 138, 66);
+        }
+
+        .copied:hover{
+            cursor: default;
+            background-color: rgb(35, 138, 66);
+        }
+
+
+        .copied .material-icons-outlined{
+            color: white;
+            transition-duration: 200ms;
         }
 
         .material-icons-outlined{
@@ -201,6 +213,10 @@ body{
         // background-color: $secondary-font-clr;
         // font-weight: 700;
         font-size: 0.8rem;
+    }
+
+    .text-copied{
+        border-color: rgb(35, 138, 66);
     }
 
     // .contact-item:hover{
@@ -326,6 +342,35 @@ body{
         gap: max(1.5vh, 15px);
         margin-top: max(3vh, 25px);
     }
+
+    .resume-link{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        transition-duration: 200ms;
+        gap: 0.4vw;
+        font-weight: 700;
+        color: $primary-font-clr;
+        width: fit-content;
+    }
+
+    .resume-link:hover{
+        gap: 0.8vw;
+        color: $highlight-font-clr;
+        // border-bottom: 1px solid $tag-font-clr;
+    }
+
+    .resume-link .material-icons-outlined{
+        font-size: 0.9rem;
+        font-weight: 700;
+        color: $primary-font-clr;
+    }
+
+    .resume-link:hover .material-icons-outlined{
+        color: $highlight-font-clr;
+    }
+    
 }
 .about__education{
     img{

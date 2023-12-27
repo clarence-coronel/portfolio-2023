@@ -7,6 +7,7 @@
   color: rgba(215, 213, 213, 0.6980392157);
   z-index: 1;
   font-weight: 100;
+  text-decoration: none;
 }
 
 :root {
@@ -156,10 +157,18 @@ body header {
 }
 .lower-header .contact-item button:hover {
   cursor: pointer;
-  background-color: rgba(215, 213, 213, 0.6980392157);
+  background-color: #FFFFFF;
 }
-.lower-header .contact-item button:hover ~ .contact-item {
-  background-color: rgba(215, 213, 213, 0.6980392157);
+.lower-header .contact-item .copied {
+  background-color: rgb(35, 138, 66);
+}
+.lower-header .contact-item .copied:hover {
+  cursor: default;
+  background-color: rgb(35, 138, 66);
+}
+.lower-header .contact-item .copied .material-icons-outlined {
+  color: white;
+  transition-duration: 200ms;
 }
 .lower-header .contact-item .material-icons-outlined {
   font-size: 1rem;
@@ -179,6 +188,9 @@ body header {
   border-radius: 5px 0 0 5px;
   padding: 5px 5px;
   font-size: 0.8rem;
+}
+.lower-header .text-copied {
+  border-color: rgb(35, 138, 66);
 }
 .lower-header a, .lower-header a:visited, .lower-header a:hover {
   text-decoration: none;
@@ -254,6 +266,30 @@ body header {
   flex-flow: column;
   gap: max(1.5vh, 15px);
   margin-top: max(3vh, 25px);
+}
+.about .resume-link {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  transition-duration: 200ms;
+  gap: 0.4vw;
+  font-weight: 700;
+  color: rgba(215, 213, 213, 0.6980392157);
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.about .resume-link:hover {
+  gap: 0.8vw;
+  color: #FFFFFF;
+}
+.about .resume-link .material-icons-outlined {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: rgba(215, 213, 213, 0.6980392157);
+}
+.about .resume-link:hover .material-icons-outlined {
+  color: #FFFFFF;
 }
 
 .about__education img {

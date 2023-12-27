@@ -56,17 +56,17 @@
             </div>
             <div class="contact">
                 <div class="contact-item">
-                    <div class="contact-content" title="Email">clarence.coronel.r@gmail.com</div>
-                    <button type="button" onclick="copyToClipboard();">
-                        <span class="material-icons-outlined">
+                    <div class="contact-content email" title="Email">clarence.coronel.r@gmail.com</div>
+                    <button type="button" class="copy-text" data-info="email">
+                        <span class="material-icons-outlined" id="copyEmail">
                             content_copy
                         </span>
                     </button>
                 </div>
                 <div class="contact-item">
-                    <div class="contact-content" title="Contact Number">0967 599 8955</div>
-                    <button type="button">
-                        <span class="material-icons-outlined">
+                    <div class="contact-content phone-num" title="Contact Number">0967 599 8955</div>
+                    <button type="button" class="copy-text" data-info="phone">
+                        <span class="material-icons-outlined" id="copyPhone">
                             content_copy
                         </span>
                     </button>
@@ -85,7 +85,7 @@
                     </p>
                     <br>
                     <p>
-                        Upon entering college, I opted for a degree in <span>BSIT</span> (Bachelor of Science in Information Technology) in Bulacan State University. I excelled in various subjects and gained a foundational understanding of multiple programming languages. However, it wasn't until my third year that I stumbled upon <span>web development</span> and became captivated. Engaging in numerous projects involving the development of web-based systems sparked a personal initiative to <span>delve deeper</span> into web development through self-study and <span>building random stuff on my own</span>, which is the more enjoyable part of it.
+                        Upon entering college, I opted for a degree in <span>BSIT</span> (Bachelor of Science in Information Technology) in Bulacan State University. I excelled in various subjects and gained a foundational understanding of multiple programming languages. However, it wasn't until my third year that I stumbled upon <span>web development</span> and became captivated. Engaging in numerous projects involving the development of web-based systems sparked a personal initiative to <span>delve deeper</span> into web development through self-study and <span>building personal projects</span> on my own, which was something I enjoy more.
                     </p>
                     <br>
                     <p>
@@ -121,6 +121,12 @@
                         </div>
                     </button>
                 </div>
+                <a href="./assets/resume.pdf" target="_blank" class="resume-link">
+                    View Full Résumé
+                    <span class="material-icons-outlined">
+                        east
+                    </span>
+                </a>
             </section>
         </main>
         <footer>
