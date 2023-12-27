@@ -369,14 +369,14 @@ body{
         justify-content: flex-start;
         align-items: center;
         transition-duration: 200ms;
-        gap: 0.4vw;
+        gap: max(0.4vw, 5px);
         font-weight: 700;
         color: $primary-font-clr;
         width: fit-content;
     }
 
     .resume-link:hover{
-        gap: 0.8vw;
+        gap: max(0.7vw, 10px);
         color: $tag-font-clr;;
         // border-bottom: 1px solid $tag-font-clr;
     }

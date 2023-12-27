@@ -286,14 +286,14 @@ body header {
   justify-content: flex-start;
   align-items: center;
   transition-duration: 200ms;
-  gap: 0.4vw;
+  gap: max(0.4vw, 5px);
   font-weight: 700;
   color: rgba(215, 213, 213, 0.6980392157);
   width: -moz-fit-content;
   width: fit-content;
 }
 .about .resume-link:hover {
-  gap: 0.8vw;
+  gap: max(0.7vw, 10px);
   color: #65f6ed;
 }
 .about .resume-link .material-icons-outlined {
