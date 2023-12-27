@@ -259,6 +259,9 @@ body header {
     flex-flow: column;
     gap: 1vh;
   }
+  .lower-header .contact-item button:hover {
+    background-color: rgba(215, 213, 213, 0.6980392157);
+  }
 }
 .about {
   font-size: 1rem;

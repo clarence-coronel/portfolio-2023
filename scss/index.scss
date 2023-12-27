@@ -63,7 +63,7 @@ body{
     .scrollable-content{
         gap: max(10vh, 50px);
     }
-    
+
     .scrollable-content h2{
         color: $highlight-font-clr;
         font-weight: 700;
@@ -327,6 +327,14 @@ body{
         .contact{
             flex-flow: column;
             gap: 1vh;
+        }
+        
+        .contact-item{
+
+            button:hover{
+                background-color: $primary-font-clr;
+            }
+            
         }
     }
 
