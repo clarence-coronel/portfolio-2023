@@ -554,7 +554,14 @@ body{
         .skill-container{
             grid-template-columns: 100%;
             row-gap: max(0.5vh, 15px);
+            border-bottom: 1px solid $primary-font-clr;
+            padding-bottom: max(5vh, 40px);
         }
+
+        // .skill-container:nth-child(2n){
+        //     background-color: rgba(255, 255, 255, 0.05);
+        //     border-radius: 5px;
+        // }
     }
 }
 
