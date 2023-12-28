@@ -426,7 +426,7 @@ body header {
   .skills .skill-container {
     grid-template-columns: 100%;
     row-gap: max(0.5vh, 15px);
-    border-bottom: 1px solid rgba(215, 213, 213, 0.6980392157);
+    border-bottom: 1px solid rgba(215, 213, 213, 0.1411764706);
     padding-bottom: max(5vh, 40px);
   }
   .skills .skill-container:last-child {
