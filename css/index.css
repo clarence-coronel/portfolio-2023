@@ -429,6 +429,9 @@ body header {
     border-bottom: 1px solid rgba(215, 213, 213, 0.6980392157);
     padding-bottom: max(5vh, 40px);
   }
+  .skills .skill-container:last-child {
+    border-bottom: none;
+  }
 }
 .projects {
   display: flex;

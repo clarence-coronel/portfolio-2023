@@ -558,6 +558,10 @@ body{
             padding-bottom: max(5vh, 40px);
         }
 
+        .skill-container:last-child{
+            border-bottom: none;
+        }
+
         // .skill-container:nth-child(2n){
         //     background-color: rgba(255, 255, 255, 0.05);
         //     border-radius: 5px;
