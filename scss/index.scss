@@ -361,12 +361,12 @@ body{
     font-size: 1rem;
     display: flex;
     flex-flow: column;
-    gap: max(4vh, 35px);
+    gap: max(2vh, 20px);
 
     .about__education{
         display: flex;
         flex-flow: column;
-        gap: max(1.5vh, 15px);
+        gap: max(1vh, 20px);
         margin-top: max(3vh, 25px);
     }
 
@@ -551,6 +551,7 @@ body{
     flex-flow: column;
     justify-content: flex-start;
     align-items: flex-start;
+    gap: max(2vh, 20px);
 
     .project-container{
         display: grid;
