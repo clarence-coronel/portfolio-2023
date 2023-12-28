@@ -436,7 +436,7 @@ body header {
   cursor: pointer;
 }
 .projects img {
-  width: 100%;
+  width: 90%;
   border-radius: 5px;
   border: 2px solid rgba(215, 213, 213, 0.6980392157);
 }
