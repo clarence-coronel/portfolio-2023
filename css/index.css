@@ -40,15 +40,15 @@ body {
   flex-flow: row nowrap;
   justify-content: center;
   align-items: flex-start;
-  gap: max(4vw, 100px);
+  gap: max(7vw, 70px);
   background-color: rgb(15, 23, 42);
   z-index: -1;
 }
 body header, body .scrollable-content {
   display: flex;
   flex-flow: column;
-  flex: 0 1 max(500px, 30vw);
-  padding: max(3vh, 100px) 0.5vw;
+  flex: 0 1 max(600px, 30vw);
+  padding: max(3vh, 100px) 2vw;
   max-width: 600px;
 }
 body main {
@@ -59,18 +59,22 @@ body main {
   gap: max(10vh, 50px);
 }
 body .scrollable-content {
-  gap: max(10vh, 50px);
+  padding-left: 0;
 }
 body .scrollable-content h2 {
   color: #FFFFFF;
   font-weight: 700;
   display: none;
+  margin: 0 auto;
 }
 body header {
   position: sticky;
   top: 0;
   justify-content: space-between;
   height: 100vh;
+  gap: max(10vh, 50px);
+  flex: 0 1 max(450px, 20vw);
+  padding-right: 0;
 }
 
 .upper-header {
@@ -220,6 +224,10 @@ body header {
     flex-flow: column;
     gap: 7vh;
   }
+  body header, body .scrollable-content {
+    flex: unset;
+    max-width: unset;
+  }
   body header {
     position: unset;
     padding: 0;
@@ -227,7 +235,6 @@ body header {
     gap: max(4vh, 20px);
     height: -moz-fit-content;
     height: fit-content;
-    flex: unset;
   }
   body .scrollable-content {
     padding: 0;
