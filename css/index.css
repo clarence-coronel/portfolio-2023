@@ -68,9 +68,21 @@ body .scrollable-content {
 }
 body .scrollable-content h2 {
   color: #FFFFFF;
-  font-weight: 700;
+  font-weight: 1000;
   display: none;
+  letter-spacing: max(2px, 0.2vw);
   margin: 0 auto;
+  margin-left: 0;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #FFFFFF;
+  padding: 0.5vh max(2vw, 20px);
+  text-align: left;
+  border-radius: 5px;
+  color: rgb(15, 23, 42);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 body header {
   position: sticky;
@@ -260,6 +272,9 @@ body header {
   }
   #light {
     display: none;
+  }
+  body .scrollable-content h2 {
+    width: 100%;
   }
   .upper-header h1 {
     font-size: 2rem;
