@@ -352,7 +352,7 @@ body{
     font-size: 1rem;
     display: flex;
     flex-flow: column;
-    gap: max(1.5vh, 15px);
+    gap: max(4vh, 35px);
 
     .about__education{
         display: flex;
@@ -393,23 +393,28 @@ body{
 .about__education{
     img{
         // display: none;
-        height: max(5vw,60px);
+        height: max(10vw, 100px);
         max-height: 100px;
+        justify-self: center;
+        align-self: center;
     }
 
     .education-btn{
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: flex-start;
-        align-items: center;
-        gap: max(2vw, 20px);
+        // display: flex;
+        // flex-flow: row nowrap;
+        // justify-content: flex-start;
+        // align-items: center;
+        // gap: max(2vw, 20px);
         width: 100%;
         background-color: transparent;
         border: none;
-        padding: max(2vh, 5px) max(2vw, 5px);
+        padding: max(2vh, 5px) max(1vw, 5px);
         border-radius: 5px;
         transition-duration: 100ms;
-        
+
+        display: grid;
+        grid-template-columns: 30% 65%;
+        column-gap: max(1.5vw, 15px);
     }
 
     .education-btn:hover{
@@ -470,7 +475,8 @@ body{
 
         .education-btn{
             width: 100%;
-            flex-flow: column;
+            grid-template-columns: 100%;
+            row-gap: max(2vh, 20px);
             // align-items: flex-start;
         }
 
@@ -491,15 +497,15 @@ body{
 
 // Skills Section
 .skills{
-    // display: flex;
-    // flex-flow: column;
-    // justify-content: flex-start;
-    // align-items: flex-start;
-    // gap: max(7vh, 40px);
-    display: grid;
-    grid-template-columns: 30% 65%;
-    column-gap: max(1.5vw, 15px);
-    row-gap: max(5vh, 40px);
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: max(2vh, 20px);
+    // display: grid;
+    // grid-template-columns: 30% 65%;
+    // column-gap: max(1.5vw, 15px);
+    // row-gap: max(5vh, 40px);
 
     // .skill-row{
     //     display: flex;
@@ -508,8 +514,53 @@ body{
     //     gap: 2vw;
     // }
 
+    .skill-container{
+        display: grid;
+        grid-template-columns: 30% 65%;
+        column-gap: max(1.5vw, 15px);
+        padding: max(2vh, 5px) max(1vw, 5px);
+    }
+
     .skills-content{
         color: $highlight-font-clr;
         font-weight: 700;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .skills{
+        .skill-container{
+            grid-template-columns: 100%;
+            row-gap: max(0.5vh, 15px);
+        }
+    }
+}
+
+
+// Projects Section
+.projects{
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    .project-container{
+        display: grid;
+        grid-template-columns: 30% 65%;
+        column-gap: max(1.5vw, 15px);
+        background-color: transparent;
+        border: none;
+        text-align: left;
+        padding: max(2vh, 5px) max(1vw, 5px);
+        transition-duration: 100ms;
+        border-radius: 5px;
+    }
+
+    .project-container:hover{
+        background-color: #ffffff29;
+    }
+
+    img{
+        width: 100%;
+        // max-width: 100px;
     }
 }

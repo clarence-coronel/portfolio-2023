@@ -273,7 +273,7 @@ body header {
   font-size: 1rem;
   display: flex;
   flex-flow: column;
-  gap: max(1.5vh, 15px);
+  gap: max(4vh, 35px);
 }
 .about .about__education {
   display: flex;
@@ -307,21 +307,22 @@ body header {
 }
 
 .about__education img {
-  height: max(5vw, 60px);
+  height: max(10vw, 100px);
   max-height: 100px;
+  justify-self: center;
+  align-self: center;
 }
 .about__education .education-btn {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-start;
-  align-items: center;
-  gap: max(2vw, 20px);
   width: 100%;
   background-color: transparent;
   border: none;
-  padding: max(2vh, 5px) max(2vw, 5px);
+  padding: max(2vh, 5px) max(1vw, 5px);
   border-radius: 5px;
   transition-duration: 100ms;
+  display: grid;
+  grid-template-columns: 30% 65%;
+  -moz-column-gap: max(1.5vw, 15px);
+       column-gap: max(1.5vw, 15px);
 }
 .about__education .education-btn:hover {
   cursor: pointer;
@@ -371,7 +372,8 @@ body header {
   }
   .about__education .education-btn {
     width: 100%;
-    flex-flow: column;
+    grid-template-columns: 100%;
+    row-gap: max(2vh, 20px);
   }
   .about__education .text-group {
     display: flex;
@@ -381,13 +383,51 @@ body header {
   }
 }
 .skills {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: max(2vh, 20px);
+}
+.skills .skill-container {
   display: grid;
   grid-template-columns: 30% 65%;
   -moz-column-gap: max(1.5vw, 15px);
        column-gap: max(1.5vw, 15px);
-  row-gap: max(5vh, 40px);
+  padding: max(2vh, 5px) max(1vw, 5px);
 }
 .skills .skills-content {
   color: #FFFFFF;
   font-weight: 700;
+}
+
+@media only screen and (max-width: 500px) {
+  .skills .skill-container {
+    grid-template-columns: 100%;
+    row-gap: max(0.5vh, 15px);
+  }
+}
+.projects {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.projects .project-container {
+  display: grid;
+  grid-template-columns: 30% 65%;
+  -moz-column-gap: max(1.5vw, 15px);
+       column-gap: max(1.5vw, 15px);
+  background-color: transparent;
+  border: none;
+  text-align: left;
+  padding: max(2vh, 5px) max(1vw, 5px);
+  transition-duration: 100ms;
+  border-radius: 5px;
+}
+.projects .project-container:hover {
+  background-color: rgba(255, 255, 255, 0.1607843137);
+}
+.projects img {
+  width: 100%;
 }/*# sourceMappingURL=index.css.map */
