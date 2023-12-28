@@ -16,12 +16,12 @@
 
 ::-moz-selection {
   background-color: #4df5ea;
-  color: #035853; /* Optional: Change the text color within the highlighted area */
+  color: rgba(3, 88, 82, 0.5960784314); /* Optional: Change the text color within the highlighted area */
 }
 
 ::selection {
   background-color: #4df5ea;
-  color: #035853; /* Optional: Change the text color within the highlighted area */
+  color: rgba(3, 88, 82, 0.5960784314); /* Optional: Change the text color within the highlighted area */
 }
 
 #light {
@@ -43,6 +43,11 @@ body {
   gap: max(7vw, 70px);
   background-color: rgb(15, 23, 42);
   z-index: -1;
+}
+body .highlight-text {
+  font-weight: 500;
+  color: white;
+  font-size: 1rem;
 }
 body header, body .scrollable-content {
   display: flex;
@@ -270,12 +275,6 @@ body header {
     background-color: rgba(215, 213, 213, 0.6980392157);
   }
 }
-.highlight-text {
-  font-weight: 500;
-  color: white;
-  font-size: 1rem;
-}
-
 .about {
   font-size: 1rem;
   display: flex;
@@ -433,8 +432,67 @@ body header {
   border-radius: 5px;
 }
 .projects .project-container:hover {
-  background-color: rgba(255, 255, 255, 0.1607843137);
+  background-color: rgba(255, 255, 255, 0.0705882353);
+  cursor: pointer;
 }
 .projects img {
   width: 100%;
+  border-radius: 5px;
+  border: 2px solid rgba(215, 213, 213, 0.6980392157);
+}
+.projects .project-container:hover img {
+  border-color: rgba(255, 255, 255, 0.6980392157);
+}
+.projects .project-container:hover .main {
+  color: #65f6ed;
+}
+.projects .material-icons-outlined {
+  font-size: 0.7rem;
+  color: inherit;
+  transition-duration: 100ms;
+}
+.projects .project-container:hover .material-icons-outlined {
+  transform: translate(4px, -4px);
+}
+
+.project-container .project-text {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: max(1.5vh, 10px);
+}
+.project-container .title {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.project-container .title .main {
+  font-size: 1rem;
+  color: #FFFFFF;
+  font-weight: 700;
+}
+.project-container .title .sub {
+  color: rgb(103, 102, 102);
+  font-size: 1rem;
+}
+.project-container .desc {
+  color: rgba(215, 213, 213, 0.6980392157);
+}
+.project-container .tags-container {
+  display: flex;
+  flex-flow: row wrap;
+  -moz-column-gap: max(0.5vw, 5px);
+       column-gap: max(0.5vw, 5px);
+  row-gap: max(1vh, 10px);
+}
+.project-container .tags-container .tag {
+  background-color: rgba(3, 88, 82, 0.5960784314);
+  color: #65f6ed;
+  padding: 5px max(0.7vw, 10px);
+  border-radius: 500px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }/*# sourceMappingURL=index.css.map */

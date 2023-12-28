@@ -43,6 +43,12 @@ body{
     gap: max(7vw, 70px);
     background-color: $bg-clr;
     z-index: -1;
+
+    .highlight-text{
+        font-weight: 500;
+        color: white;
+        font-size: 1rem;
+    }
     
     header, .scrollable-content{
         display: flex;
@@ -350,13 +356,6 @@ body{
 
 }
 
-
-.highlight-text{
-    font-weight: 500;
-    color: white;
-    font-size: 1rem;
-}
-
 // About Section
 .about{
     font-size: 1rem;
@@ -566,11 +565,85 @@ body{
     }
 
     .project-container:hover{
-        background-color: #ffffff29;
+        background-color: #ffffff12;
+        cursor: pointer;
     }
 
     img{
         width: 100%;
+        border-radius: 5px;
+        border: 2px solid $primary-font-clr;
         // max-width: 100px;
+    }
+
+    .project-container:hover img{
+        border-color: lighten($color: $primary-font-clr, $amount: 100);
+    }
+
+    .project-container:hover .main{
+        color: $tag-font-clr;
+    }
+
+    .material-icons-outlined{
+        font-size: 0.7rem;
+        color: inherit;
+        transition-duration: 100ms;
+    }
+
+    .project-container:hover .material-icons-outlined{
+        transform: translate(4px, -4px);
+    }
+}
+.project-container{
+
+    .project-text{
+        display: flex;
+        flex-flow: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: max(1.5vh, 10px);
+    }
+    .title{
+        display: flex;
+        flex-flow: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        .main{
+            font-size: 1rem;
+            color: $highlight-font-clr;
+            font-weight: 700;
+            // transition-duration: 100ms;
+        }
+
+        .sub{
+            color: rgb(103, 102, 102);
+            font-size: 1rem;
+        }
+    }
+
+    .desc{
+        color: $primary-font-clr;
+    }
+
+    .tags-container{
+        display: flex;
+        flex-flow: row wrap;
+        // gap: max(0.5vw, 5px);
+        column-gap: max(0.5vw, 5px);
+        row-gap: max(1vh, 10px);
+
+        .tag{
+            background-color: $tag-bg-clr;
+            color: $tag-font-clr;
+            padding: 5px max(0.7vw, 10px);
+            border-radius: 500px;
+            user-select: none;
+        }
+
+        // .tag:hover{
+        //     background-color: lighten($color: $tag-bg-clr, $amount: 5);
+        //     color: lighten($tag-font-clr, 5);
+        // }
     }
 }
