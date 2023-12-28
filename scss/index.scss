@@ -341,20 +341,18 @@ body{
 }
 
 
+.highlight-text{
+    font-weight: 500;
+    color: white;
+    font-size: 1rem;
+}
+
 // About Section
 .about{
     font-size: 1rem;
     display: flex;
     flex-flow: column;
     gap: max(1.5vh, 15px);
-
-    .about__text{
-        span{
-            font-weight: 500;
-            color: white;
-            font-size: 1rem;
-        }
-    }
 
     .about__education{
         display: flex;
@@ -488,5 +486,30 @@ body{
             gap: max(0.4vh, 5px);
             text-align: left;
         }
+    }
+}
+
+// Skills Section
+.skills{
+    // display: flex;
+    // flex-flow: column;
+    // justify-content: flex-start;
+    // align-items: flex-start;
+    // gap: max(7vh, 40px);
+    display: grid;
+    grid-template-columns: 30% 65%;
+    column-gap: max(1.5vw, 15px);
+    row-gap: max(5vh, 40px);
+
+    // .skill-row{
+    //     display: flex;
+    //     flex-flow: row nowrap;
+    //     justify-content: space-between;
+    //     gap: 2vw;
+    // }
+
+    .skills-content{
+        color: $highlight-font-clr;
+        font-weight: 700;
     }
 }

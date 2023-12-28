@@ -263,16 +263,17 @@ body header {
     background-color: rgba(215, 213, 213, 0.6980392157);
   }
 }
+.highlight-text {
+  font-weight: 500;
+  color: white;
+  font-size: 1rem;
+}
+
 .about {
   font-size: 1rem;
   display: flex;
   flex-flow: column;
   gap: max(1.5vh, 15px);
-}
-.about .about__text span {
-  font-weight: 500;
-  color: white;
-  font-size: 1rem;
 }
 .about .about__education {
   display: flex;
@@ -378,4 +379,15 @@ body header {
     gap: max(0.4vh, 5px);
     text-align: left;
   }
+}
+.skills {
+  display: grid;
+  grid-template-columns: 30% 65%;
+  -moz-column-gap: max(1.5vw, 15px);
+       column-gap: max(1.5vw, 15px);
+  row-gap: max(5vh, 40px);
+}
+.skills .skills-content {
+  color: #FFFFFF;
+  font-weight: 700;
 }/*# sourceMappingURL=index.css.map */
