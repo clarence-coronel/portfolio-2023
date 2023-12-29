@@ -74,7 +74,7 @@ body{
         color: $highlight-font-clr;
         // font-style: italic;
         font-weight: 1000;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         display: none;
         letter-spacing: max(2px, 0.2vw);
         // text-shadow: 2px 2px 5px rgb(82, 81, 81);
@@ -90,7 +90,7 @@ body{
         // user-select: none;
         position: sticky;
         top: 0;
-        height: max(5vh, 40px);
+        height: max(6vh, 50px);
         background-color: rgba(15, 23, 42, 0.5);
         z-index: 2;
         margin-bottom: max(-6vh, -60px);
@@ -597,13 +597,13 @@ body{
             grid-template-columns: 100%;
             row-gap: max(0.5vh, 15px);
             padding: 0;
-            border-bottom: 1px solid #d7d5d524;
-            padding-bottom: max(5vh, 40px);
+            // border-bottom: 1px solid #d7d5d524;
+            // padding-bottom: max(5vh, 40px);
         }
 
         .skill-container:last-child{
-            border-bottom: none;
-            padding-bottom: none;
+            // border-bottom: none;
+            // padding-bottom: none;
         }
 
         // .skill-container:nth-child(2n){

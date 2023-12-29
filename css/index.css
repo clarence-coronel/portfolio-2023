@@ -69,12 +69,12 @@ body .scrollable-content {
 body .scrollable-content h2 {
   color: #FFFFFF;
   font-weight: 1000;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   display: none;
   letter-spacing: max(2px, 0.2vw);
   position: sticky;
   top: 0;
-  height: max(5vh, 40px);
+  height: max(6vh, 50px);
   background-color: rgba(15, 23, 42, 0.5);
   z-index: 2;
   margin-bottom: max(-6vh, -60px);
@@ -448,12 +448,6 @@ body header {
     grid-template-columns: 100%;
     row-gap: max(0.5vh, 15px);
     padding: 0;
-    border-bottom: 1px solid rgba(215, 213, 213, 0.1411764706);
-    padding-bottom: max(5vh, 40px);
-  }
-  .skills .skill-container:last-child {
-    border-bottom: none;
-    padding-bottom: none;
   }
 }
 .projects {
