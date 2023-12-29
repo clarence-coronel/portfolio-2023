@@ -1,4 +1,5 @@
-alert("Website is currently in development")
+// alert("Website is currently in development")
+let change2Check = null;
 
 document.addEventListener("DOMContentLoaded", ()=>{
     listeners();
@@ -6,7 +7,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
     copyText();
 })
 function copyToClipboard(textToCopy, type) {
-    let clicked = false;
+    clearInterval(change2Check);
     // Create a temporary textarea element
     var textarea = document.createElement("textarea");
 
@@ -41,7 +42,7 @@ function copyToClipboard(textToCopy, type) {
 
         ico.innerText = "done";
 
-        setTimeout(()=>{
+        change2Check = setTimeout(()=>{
             ico.innerText = "content_copy";
             btn.classList.remove("copied");
             text.classList.remove("text-copied");
@@ -63,7 +64,7 @@ function copyToClipboard(textToCopy, type) {
         ico.innerText = "done";
         text.classList.add("text-copied")
 
-        setTimeout(()=>{
+        change2Check = setTimeout(()=>{
             ico.innerText = "content_copy";
             btn.classList.remove("copied");
             text.classList.remove("text-copied");

@@ -490,8 +490,8 @@ body{
     }
 }
 @media only screen and (max-width: 500px) {
-    .about__education{
-        
+
+    .about__education{       
         img{
             height: max(5vw,100px);
         }
@@ -503,19 +503,46 @@ body{
             // align-items: flex-start;
         }
 
-        .school{
-            // justify-content: center;
-            // align-items: flex-start;
-            // flex-flow: column;
-        }
-
         .text-group{
             display: flex;
             flex-flow: column;
             gap: max(0.4vh, 5px);
             text-align: left;
         }
+
+        .school{
+            width: fit-content;
+        }
+
+        .education-btn:hover{
+            cursor: default;
+            background-color: transparent;
+        }
+    
+        .education-btn:hover .school, .education-btn:hover .material-icons-outlined{
+            color: $highlight-font-clr;
+        }
+    
+        .education-btn:hover .school .material-icons-outlined{
+            transform: none;
+        }
+
+        .education-btn .school:hover{
+            cursor: pointer;
+            color: $tag-font-clr;
+        }
+
+        .education-btn .school:hover .material-icons-outlined{
+            color: $tag-font-clr;
+        }
+        
     }
+
+    // .about__education .school:hover{
+    //     cursor: pointer;
+    //     color: $tag-font-clr !important;
+    // }
+    
 }
 
 // Skills Section
@@ -560,6 +587,7 @@ body{
 
         .skill-container:last-child{
             border-bottom: none;
+            padding-bottom: none;
         }
 
         // .skill-container:nth-child(2n){
@@ -671,5 +699,30 @@ body{
         //     background-color: lighten($color: $tag-bg-clr, $amount: 5);
         //     color: lighten($tag-font-clr, 5);
         // }
+    }
+}
+@media only screen and (max-width: 500px) {
+    .projects {
+        img{
+            margin: 0 auto;
+        }
+
+        .project-container{
+            row-gap: 2vh;
+            grid-template-columns: 100%;
+            border-bottom: 1px solid #d7d5d524;
+            padding-bottom: max(5vh, 40px);
+            border-radius: unset;
+        }
+
+        .project-container:last-child{
+            border-bottom: none;
+            padding-bottom: none;
+        }
+
+        .project-text{
+            margin: 0 auto;
+            width: 90%;
+        }
     }
 }

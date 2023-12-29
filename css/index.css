@@ -402,6 +402,27 @@ body header {
     gap: max(0.4vh, 5px);
     text-align: left;
   }
+  .about__education .school {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .about__education .education-btn:hover {
+    cursor: default;
+    background-color: transparent;
+  }
+  .about__education .education-btn:hover .school, .about__education .education-btn:hover .material-icons-outlined {
+    color: #FFFFFF;
+  }
+  .about__education .education-btn:hover .school .material-icons-outlined {
+    transform: none;
+  }
+  .about__education .education-btn .school:hover {
+    cursor: pointer;
+    color: #65f6ed;
+  }
+  .about__education .education-btn .school:hover .material-icons-outlined {
+    color: #65f6ed;
+  }
 }
 .skills {
   display: flex;
@@ -431,6 +452,7 @@ body header {
   }
   .skills .skill-container:last-child {
     border-bottom: none;
+    padding-bottom: none;
   }
 }
 .projects {
@@ -516,4 +538,25 @@ body header {
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
+}
+
+@media only screen and (max-width: 500px) {
+  .projects img {
+    margin: 0 auto;
+  }
+  .projects .project-container {
+    row-gap: 2vh;
+    grid-template-columns: 100%;
+    border-bottom: 1px solid rgba(215, 213, 213, 0.1411764706);
+    padding-bottom: max(5vh, 40px);
+    border-radius: unset;
+  }
+  .projects .project-container:last-child {
+    border-bottom: none;
+    padding-bottom: none;
+  }
+  .projects .project-text {
+    margin: 0 auto;
+    width: 90%;
+  }
 }/*# sourceMappingURL=index.css.map */
