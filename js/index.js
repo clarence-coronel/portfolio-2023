@@ -4,8 +4,157 @@ let change2Check = null;
 document.addEventListener("DOMContentLoaded", ()=>{
     listeners();
     goToSchoolLink();
+    goToRepoLink();
     copyText();
+    resizeHandler()
+    window.addEventListener('resize', resizeHandler);
 })
+
+function resizeHandler(){
+    const viewportWidth = window.innerWidth;
+    const viewportHeight = window.innerHeight;
+
+    if(viewportWidth <= 500){
+        disabledEducBtn(true);
+        enableListenerSchoolTxt(true);
+
+        disabledProjBtn(true);
+        enableListenerProjTxt(true);
+    }
+    else{
+        disabledEducBtn(false);
+        enableListenerSchoolTxt(false);
+
+        disabledProjBtn(false);
+        enableListenerProjTxt(false);
+    }
+}
+
+// For Educ Buttons
+function disabledEducBtn(status){
+    if(status){
+        let btns = document.querySelectorAll(".education-btn");
+
+        btns.forEach(btn=>{
+            btn.disabled = status;
+            
+            let div = document.createElement("div");
+            div.classList.add("education-btn");
+            div.setAttribute("data-school", `${btn.dataset.school}`);
+    
+            div.innerHTML = btn.innerHTML;
+    
+            btn.parentNode.replaceChild(div, btn);
+        })
+    }
+    else{
+        let divs = document.querySelectorAll(".education-btn");
+
+        divs.forEach(div=>{            
+            let button = document.createElement("button");
+            button.classList.add("education-btn");
+            button.setAttribute("data-school", `${div.dataset.school}`);
+            button.setAttribute("type", "button");
+    
+            button.innerHTML = div.innerHTML;
+            div.parentNode.replaceChild(button, div);
+
+            goToSchoolLink();
+        }) 
+    }
+   
+}
+
+function enableListenerSchoolTxt(status){
+
+    if(status){
+        let txts = document.querySelectorAll(".education-btn .school");
+
+        txts.forEach(txt=>{
+            txt.setAttribute("onclick", `mobileRedirectSchool('${txt.dataset.school}');`);
+        });
+    }
+    else{
+        let txts = document.querySelectorAll(".education-btn .school");
+
+        txts.forEach(txt=>{
+            txt.removeAttribute("onclick");
+        });
+    }
+
+    
+}
+
+function mobileRedirectSchool(school){
+    if(school == "bsu"){
+        window.open("https://www.bulsu.edu.ph", "_blank");
+    }
+    else if(school == "yanga"){
+        window.open("https://dyci.edu.ph", "_blank");
+    }
+}
+
+// For Proj Buttons
+function disabledProjBtn(status){
+    if(status){
+        let btns = document.querySelectorAll(".project-container");
+
+        btns.forEach(btn=>{
+            btn.disabled = status;
+            
+            let div = document.createElement("div");
+            div.classList.add("project-container");
+            
+            div.setAttribute("data-proj", `${btn.dataset.proj}`);
+    
+            div.innerHTML = btn.innerHTML;
+    
+            btn.parentNode.replaceChild(div, btn);
+        })
+    }
+    else{
+        let divs = document.querySelectorAll(".project-container");
+
+        divs.forEach(div=>{            
+            let button = document.createElement("button");
+            button.classList.add("project-container");
+            button.setAttribute("data-proj", `${div.dataset.proj}`);
+            button.setAttribute("type", "button");
+    
+            button.innerHTML = div.innerHTML;
+            div.parentNode.replaceChild(button, div);
+
+            goToRepoLink();
+        }) 
+    }
+   
+}
+
+function enableListenerProjTxt(status){
+    if(status){
+        let txts = document.querySelectorAll(".project-container .main");
+        txts.forEach(txt=>{
+            txt.setAttribute("onclick", `mobileRedirectProj('${txt.dataset.proj}');`);
+        });
+    }
+    else{
+        let txts = document.querySelectorAll(".project-container .main");
+
+        txts.forEach(txt=>{
+            txt.removeAttribute("onclick");
+        });
+    }
+
+}
+
+function mobileRedirectProj(proj){
+    if(proj == "calculator"){
+        window.open("https://clarence-coronel.github.io/calculator/", "_blank");
+    }
+}
+
+
+
 function copyToClipboard(textToCopy, type) {
     clearInterval(change2Check);
     // Create a temporary textarea element
@@ -97,6 +246,20 @@ function goToSchoolLink(){
             }
             else if(school.dataset.school == "yanga"){
                 window.open("https://dyci.edu.ph", "_blank");
+            }
+        })
+        
+    })
+}
+
+function goToRepoLink(){
+    let projects = document.querySelectorAll(".project-container");
+
+    projects.forEach(project=>{
+        
+        project.addEventListener("click", ()=>{
+            if(project.dataset.proj == "calculator"){
+                window.open("https://clarence-coronel.github.io/calculator/", "_blank");
             }
         })
         

@@ -65,6 +65,7 @@ body main {
 }
 body .scrollable-content {
   padding-left: 0;
+  gap: max(10vh, 50px);
 }
 body .scrollable-content h2 {
   color: #FFFFFF;
@@ -78,8 +79,7 @@ body .scrollable-content h2 {
   background-color: rgba(15, 23, 42, 0.5);
   z-index: 2;
   margin-bottom: max(-6vh, -60px);
-  backdrop-filter: blur(10px); /* Adjust the blur amount as needed */
-  -webkit-backdrop-filter: blur(10px);
+  background-color: rgb(15, 23, 42);
 }
 body header {
   position: sticky;
@@ -233,6 +233,9 @@ body header {
 }
 
 @media only screen and (max-width: 1200px) {
+  #light {
+    display: none;
+  }
   body {
     padding: 4vh 5vw;
     flex-flow: column;
@@ -264,16 +267,13 @@ body header {
   .upper-header .short-intro {
     width: max(60%, 280px);
   }
+  body .scrollable-content h2 {
+    width: 100%;
+  }
 }
 @media only screen and (max-width: 700px) {
   :root {
     font-size: 14px;
-  }
-  #light {
-    display: none;
-  }
-  body .scrollable-content h2 {
-    width: 100%;
   }
   .upper-header h1 {
     font-size: 2rem;
@@ -421,6 +421,7 @@ body header {
   }
   .about__education .education-btn .school:hover .material-icons-outlined {
     color: #65f6ed;
+    transform: translate(4px, -4px);
   }
 }
 .skills {
@@ -455,7 +456,7 @@ body header {
   flex-flow: column;
   justify-content: flex-start;
   align-items: flex-start;
-  gap: max(5vh, 50px);
+  gap: max(2vh, 20px);
 }
 .projects .project-container {
   display: grid;
@@ -491,6 +492,30 @@ body header {
 }
 .projects .project-container:hover .material-icons-outlined {
   transform: translate(4px, -4px);
+}
+.projects .projarchive-link {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  transition-duration: 200ms;
+  gap: max(0.4vw, 5px);
+  font-weight: 700;
+  color: rgba(215, 213, 213, 0.6980392157);
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.projects .projarchive-link:hover {
+  gap: max(0.7vw, 10px);
+  color: #65f6ed;
+}
+.projects .projarchive-link .material-icons-outlined {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: rgba(215, 213, 213, 0.6980392157);
+}
+.projects .projarchive-link:hover .material-icons-outlined {
+  color: #65f6ed;
 }
 
 .project-container .project-text {
