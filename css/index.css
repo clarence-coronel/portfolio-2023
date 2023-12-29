@@ -455,7 +455,7 @@ body header {
   flex-flow: column;
   justify-content: flex-start;
   align-items: flex-start;
-  gap: max(4vh, 40px);
+  gap: max(5vh, 50px);
 }
 .projects .project-container {
   display: grid;
