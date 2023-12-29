@@ -154,6 +154,9 @@ function mobileRedirectProj(proj){
     if(proj == "calculator"){
         window.open("https://clarence-coronel.github.io/calculator/", "_blank");
     }
+    else if(project.dataset.proj == "sketch"){
+        window.open("https://clarence-coronel.github.io/top_etch-a-sketch/", "_blank");
+    }
 }
 
 
