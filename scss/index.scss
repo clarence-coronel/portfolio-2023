@@ -74,19 +74,31 @@ body{
         color: $highlight-font-clr;
         // font-style: italic;
         font-weight: 1000;
+        font-size: 1.5rem;
         display: none;
         letter-spacing: max(2px, 0.2vw);
         // text-shadow: 2px 2px 5px rgb(82, 81, 81);
         // padding: 0 2vw;
-        margin: 0 auto;
-        margin-left: 0;
-        width: fit-content;
-        background-color: $highlight-font-clr;
-        padding: max(0.5vh) max(2vw, 20px);
-        text-align: left;
-        border-radius: 5px;
-        color: $bg-clr;
-        user-select: none;
+        // margin: 0 auto;
+        // margin-left: 0;
+        // width: fit-content;
+        // background-color: $highlight-font-clr;
+        // padding: max(0.5vh) max(2vw, 20px);
+        // text-align: left;
+        // border-radius: 5px;
+        // color: $bg-clr;
+        // user-select: none;
+        position: sticky;
+        top: 0;
+        height: max(5vh, 40px);
+        background-color: rgba(15, 23, 42, 0.5);
+        z-index: 2;
+        margin-bottom: max(-6vh, -60px);
+
+        backdrop-filter: blur(10px); /* Adjust the blur amount as needed */
+        -webkit-backdrop-filter: blur(10px); 
+
+        // text-shadow: 0 0 5px rgba(255, 255, 255, 0.461);
     }
 
     header{
@@ -302,7 +314,9 @@ body{
         }
 
         .scrollable-content h2{
-            display: unset;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
         }
     }
 
@@ -551,7 +565,7 @@ body{
     flex-flow: column;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: max(2vh, 20px);
+    gap: max(5vh, 40px);
     // display: grid;
     // grid-template-columns: 30% 65%;
     // column-gap: max(1.5vw, 15px);
@@ -568,7 +582,8 @@ body{
         display: grid;
         grid-template-columns: 30% 65%;
         column-gap: max(1.5vw, 15px);
-        padding: max(2vh, 5px) max(1vw, 5px);
+        padding: max(2vh, 20px) max(1vw, 5px);
+        font-size: 1rem;
     }
 
     .skills-content{
@@ -581,6 +596,7 @@ body{
         .skill-container{
             grid-template-columns: 100%;
             row-gap: max(0.5vh, 15px);
+            padding: 0;
             border-bottom: 1px solid #d7d5d524;
             padding-bottom: max(5vh, 40px);
         }
@@ -604,7 +620,7 @@ body{
     flex-flow: column;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: max(2vh, 20px);
+    gap: max(5vh, 50px);
 
     .project-container{
         display: grid;
@@ -671,6 +687,7 @@ body{
         }
 
         .sub{
+            display: none;
             color: rgb(103, 102, 102);
             font-size: 1rem;
         }
@@ -704,25 +721,50 @@ body{
 @media only screen and (max-width: 500px) {
     .projects {
         img{
-            margin: 0 auto;
+            width: 70%;
         }
 
         .project-container{
             row-gap: 2vh;
             grid-template-columns: 100%;
-            border-bottom: 1px solid #d7d5d524;
-            padding-bottom: max(5vh, 40px);
-            border-radius: unset;
+            padding: 0;
+            // border-bottom: 1px solid #d7d5d524;
+            // padding-bottom: max(5vh, 40px);
+            // border-radius: unset;
         }
 
-        .project-container:last-child{
-            border-bottom: none;
-            padding-bottom: none;
+        // .project-container:last-child{
+        //     border-bottom: none;
+        //     padding-bottom: none;
+        // }
+
+        .project-container:hover{
+            cursor: default;
+            background-color: transparent;
         }
+
+        .project-container:hover img{
+            border-color: $primary-font-clr;
+        }
+    
+        .project-container:hover .main{
+            color: $highlight-font-clr
+        }
+
+        .project-container:hover .material-icons-outlined{
+            transform: none;
+        }
+
 
         .project-text{
-            margin: 0 auto;
-            width: 90%;
+            // margin: 0 auto;
+            // width: 90%;
+            order: -1;
+        }
+
+        .project-text .main:hover{
+            cursor: pointer;
+            color: $tag-font-clr;
         }
     }
 }
