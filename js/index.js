@@ -264,7 +264,9 @@ function goToRepoLink(){
     projects.forEach(project=>{
         
         project.addEventListener("click", ()=>{
-            if(project.dataset.proj == "calculator"){
+            if(project.dataset.proj == "sketch"){
+                window.open("https://clarence-coronel.github.io/top_etch-a-sketch/", "_blank");
+            }else if(project.dataset.proj == "calculator"){
                 window.open("https://clarence-coronel.github.io/calculator/", "_blank");
             }
         })
