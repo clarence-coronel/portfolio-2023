@@ -564,11 +564,11 @@ body header {
   .projects .project-container:hover .material-icons-outlined {
     transform: none;
   }
-  .projects .project-text {
-    order: -1;
-  }
   .projects .project-text .main:hover {
     cursor: pointer;
     color: #65f6ed;
+  }
+  .projects .main:hover .material-icons-outlined {
+    transform: translate(4px, -4px);
   }
 }/*# sourceMappingURL=index.css.map */

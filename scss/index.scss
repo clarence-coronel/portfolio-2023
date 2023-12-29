@@ -759,12 +759,16 @@ body{
         .project-text{
             // margin: 0 auto;
             // width: 90%;
-            order: -1;
+            // order: -1;
         }
 
         .project-text .main:hover{
             cursor: pointer;
             color: $tag-font-clr;
+        }
+
+        .main:hover .material-icons-outlined{
+            transform: translate(4px, -4px);
         }
     }
 }
