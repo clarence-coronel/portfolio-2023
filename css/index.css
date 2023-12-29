@@ -382,8 +382,7 @@ body header {
 
 @media only screen and (max-width: 1200px) {
   .about__education .education-btn {
-    width: -moz-fit-content;
-    width: fit-content;
+    width: min(100%, 500px);
   }
 }
 @media only screen and (max-width: 500px) {

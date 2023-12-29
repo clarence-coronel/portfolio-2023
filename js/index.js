@@ -92,6 +92,9 @@ function mobileRedirectSchool(school){
     else if(school == "yanga"){
         window.open("https://dyci.edu.ph", "_blank");
     }
+    else if(school == "james"){
+        window.open("https://www.facebook.com/StJamesAcademyPlaridelBulacan", "_blank");
+    }
 }
 
 // For Proj Buttons
@@ -246,6 +249,9 @@ function goToSchoolLink(){
             }
             else if(school.dataset.school == "yanga"){
                 window.open("https://dyci.edu.ph", "_blank");
+            }
+            else if(school.dataset.school == "james"){
+                window.open("https://www.facebook.com/StJamesAcademyPlaridelBulacan", "_blank");
             }
         })
         
