@@ -216,14 +216,14 @@ body header {
 .lower-header .contact {
   display: flex;
   flex-flow: row wrap;
-  gap: max(1vw, 1vh);
+  gap: 0.5vw;
 }
 .lower-header .contact-content {
   color: white;
   border: 1px solid #8d8d8d;
   border-radius: 5px 0 0 5px;
   padding: 5px 5px;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 .lower-header .text-copied {
   border-color: rgb(35, 138, 66);
@@ -567,6 +567,7 @@ body header {
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
+  font-size: 0.8rem;
 }
 
 @media only screen and (max-width: 500px) {

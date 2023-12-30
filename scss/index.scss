@@ -262,7 +262,7 @@ body{
     .contact{
         display: flex;
         flex-flow: row wrap;
-        gap: max(1vw, 1vh);
+        gap: max(0.5vw, 0.5vw);
     }
 
     .contact-content{
@@ -273,7 +273,7 @@ body{
         padding: 5px 5px;
         // background-color: $secondary-font-clr;
         // font-weight: 700;
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
 
     .text-copied{
@@ -760,6 +760,7 @@ body{
             padding: 5px max(0.7vw, 10px);
             border-radius: 500px;
             user-select: none;
+            font-size: 0.8rem;
         }
 
         // .tag:hover{
