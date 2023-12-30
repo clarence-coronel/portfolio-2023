@@ -93,12 +93,12 @@ body{
         position: sticky;
         top: 0;
         height: max(6vh, 50px);
-        background-color: rgba(15, 23, 42, 0.5);
+        background-color: rgba(15, 23, 42);
         z-index: 2;
         margin-bottom: max(-6vh, -60px);
         
-        background-color: $bg-clr;
-        // backdrop-filter: blur(10px); /* Adjust the blur amount as needed */
+        // background-color: $bg-clr;
+        // backdrop-filter: blur(10px);
         // -webkit-backdrop-filter: blur(10px); 
 
         // text-shadow: 0 0 5px rgba(255, 255, 255, 0.461);

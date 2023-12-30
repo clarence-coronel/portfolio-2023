@@ -351,3 +351,14 @@ function isElementInViewport(el) {
         rect.right <= (window.innerWidth || document.documentElement.clientWidth)
     );
 }
+
+function isStickyElementAtTop(stickyElement) {
+  
+    if (stickyElement) {
+      const computedStyle = window.getComputedStyle(stickyElement);
+      const position = computedStyle.getPropertyValue("position");
+  
+      return position === "sticky" && stickyElement.getBoundingClientRect().top === 0;
+    }
+    return false;
+  }

@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   font-family: "Inter", sans-serif;
-  color: rgba(215, 213, 213, 0.6980392157);
+  color: rgba(255, 255, 255, 0.6);
   z-index: 1;
   font-weight: 100;
   text-decoration: none;
@@ -76,10 +76,9 @@ body .scrollable-content h2 {
   position: sticky;
   top: 0;
   height: max(6vh, 50px);
-  background-color: rgba(15, 23, 42, 0.5);
+  background-color: rgb(15, 23, 42);
   z-index: 2;
   margin-bottom: max(-6vh, -60px);
-  background-color: rgb(15, 23, 42);
 }
 body header {
   position: sticky;
@@ -135,12 +134,12 @@ body header {
 }
 .upper-header .nav-row span {
   font-weight: 700;
-  color: rgba(215, 213, 213, 0.6980392157);
+  color: rgba(255, 255, 255, 0.6);
 }
 .upper-header .nav-row .line {
   height: 1px;
   width: 40px;
-  background-color: rgba(215, 213, 213, 0.6980392157);
+  background-color: rgba(255, 255, 255, 0.6);
   transition-duration: 200ms;
 }
 .upper-header .nav-row:hover .line {
@@ -238,7 +237,7 @@ body header {
   fill: #8d8d8d;
 }
 .lower-header svg:hover {
-  fill: rgba(215, 213, 213, 0.6980392157);
+  fill: rgba(255, 255, 255, 0.6);
 }
 
 @media only screen and (max-width: 1200px) {
@@ -295,7 +294,7 @@ body header {
     gap: 1vh;
   }
   .lower-header .contact-item button:hover {
-    background-color: rgba(215, 213, 213, 0.6980392157);
+    background-color: rgba(255, 255, 255, 0.6);
   }
 }
 .about {
@@ -318,7 +317,7 @@ body header {
   transition-duration: 200ms;
   gap: max(0.4vw, 5px);
   font-weight: 700;
-  color: rgba(215, 213, 213, 0.6980392157);
+  color: rgba(255, 255, 255, 0.6);
   width: -moz-fit-content;
   width: fit-content;
 }
@@ -329,7 +328,7 @@ body header {
 .about .resume-link .material-icons-outlined {
   font-size: 0.7rem;
   font-weight: 700;
-  color: rgba(215, 213, 213, 0.6980392157);
+  color: rgba(255, 255, 255, 0.6);
 }
 .about .resume-link:hover .material-icons-outlined {
   color: #65f6ed;
@@ -485,10 +484,10 @@ body header {
 .projects img {
   width: 90%;
   border-radius: 5px;
-  border: 2px solid rgba(215, 213, 213, 0.6980392157);
+  border: 2px solid rgba(255, 255, 255, 0.6);
 }
 .projects .project-container:hover img {
-  border-color: rgba(255, 255, 255, 0.6980392157);
+  border-color: rgba(255, 255, 255, 0.6);
 }
 .projects .project-container:hover .main {
   color: #65f6ed;
@@ -509,7 +508,7 @@ body header {
   transition-duration: 200ms;
   gap: max(0.4vw, 5px);
   font-weight: 700;
-  color: rgba(215, 213, 213, 0.6980392157);
+  color: rgba(255, 255, 255, 0.6);
   width: -moz-fit-content;
   width: fit-content;
 }
@@ -520,7 +519,7 @@ body header {
 .projects .projarchive-link .material-icons-outlined {
   font-size: 0.7rem;
   font-weight: 700;
-  color: rgba(215, 213, 213, 0.6980392157);
+  color: rgba(255, 255, 255, 0.6);
 }
 .projects .projarchive-link:hover .material-icons-outlined {
   color: #65f6ed;
@@ -550,7 +549,7 @@ body header {
   font-size: 1rem;
 }
 .project-container .desc {
-  color: rgba(215, 213, 213, 0.6980392157);
+  color: rgba(255, 255, 255, 0.6);
 }
 .project-container .tags-container {
   display: flex;
@@ -583,7 +582,7 @@ body header {
     background-color: transparent;
   }
   .projects .project-container:hover img {
-    border-color: rgba(215, 213, 213, 0.6980392157);
+    border-color: rgba(255, 255, 255, 0.6);
   }
   .projects .project-container:hover .main {
     color: #FFFFFF;
