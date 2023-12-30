@@ -129,12 +129,13 @@ body{
     h1{
         font-weight: 700;
         font-size: 3rem;
+        color: rgb(255, 255, 255);
     }
 
     .intro span{
-        font-weight: 700;
+        // font-weight: 700;
         font-size: 1.5rem;
-        color: $secondary-font-clr;
+        color: white;
     }
 
     .short-intro{

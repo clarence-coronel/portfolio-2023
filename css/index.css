@@ -104,11 +104,11 @@ body header {
 .upper-header h1 {
   font-weight: 700;
   font-size: 3rem;
+  color: rgb(255, 255, 255);
 }
 .upper-header .intro span {
-  font-weight: 700;
   font-size: 1.5rem;
-  color: #8d8d8d;
+  color: white;
 }
 .upper-header .short-intro {
   font-size: 1rem;
