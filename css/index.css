@@ -11,7 +11,7 @@
 }
 
 :root {
-  font-size: 15px;
+  font-size: 16px;
 }
 
 ::-moz-selection {
@@ -103,11 +103,11 @@ body header {
 }
 .upper-header h1 {
   font-weight: 700;
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: rgb(255, 255, 255);
 }
 .upper-header .intro span {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: white;
 }
 .upper-header .short-intro {
@@ -280,9 +280,6 @@ body header {
   }
 }
 @media only screen and (max-width: 700px) {
-  :root {
-    font-size: 14px;
-  }
   .upper-header h1 {
     font-size: 2rem;
   }
@@ -450,6 +447,9 @@ body header {
   color: #FFFFFF;
   font-weight: 700;
 }
+.skills .skill-desc {
+  font-size: 0.9rem;
+}
 
 @media only screen and (max-width: 500px) {
   .skills .skill-container {
@@ -550,6 +550,7 @@ body header {
 }
 .project-container .desc {
   color: rgba(255, 255, 255, 0.6);
+  font-size: 0.9rem;
 }
 .project-container .tags-container {
   display: flex;

@@ -15,7 +15,7 @@
 }
 
 :root{
-    font-size: 15px;
+    font-size: 16px;
 }
 
 ::selection {
@@ -128,13 +128,13 @@ body{
 
     h1{
         font-weight: 700;
-        font-size: 3rem;
+        font-size: 2.5rem;
         color: rgb(255, 255, 255);
     }
 
     .intro span{
         // font-weight: 700;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         color: white;
     }
 
@@ -363,7 +363,7 @@ body{
 }
 @media only screen and (max-width: 700px) {
     :root{
-        font-size: 14px;
+        // font-size: 16px;
     }
 
     .upper-header{
@@ -607,6 +607,10 @@ body{
         color: $highlight-font-clr;
         font-weight: 700;
     }
+
+    .skill-desc{
+        font-size: 0.9rem;
+    }
 }
 @media only screen and (max-width: 500px) {
     .skills{
@@ -740,6 +744,7 @@ body{
 
     .desc{
         color: $primary-font-clr;
+        font-size: 0.9rem;
     }
 
     .tags-container{
