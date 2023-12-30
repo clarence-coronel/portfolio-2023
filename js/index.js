@@ -312,11 +312,9 @@ function scrollToSection(){
     let skills = document.querySelector("#skills").getBoundingClientRect();
     let proj = document.querySelector("#proj").getBoundingClientRect();
 
-    const viewportHeightPercentage = 0.1; // Adjust this percentage based on your preference
-
-    if(proj.top < window.innerHeight ) updateSelectedNavStyle("proj");
-    else if(skills.top < window.innerHeight) updateSelectedNavStyle("skills");
-    else if(about.top <= window.innerHeight) updateSelectedNavStyle("about");
+    if(proj.top < (window.innerHeight - 60 * window.innerHeight / 100)) updateSelectedNavStyle("proj");
+    else if(skills.top < (window.innerHeight - 60 * window.innerHeight / 100)) updateSelectedNavStyle("skills");
+    else if(about.top < (window.innerHeight - 60 * window.innerHeight / 100)) updateSelectedNavStyle("about");
 }
 
 function selectNewNav(navSelected){
