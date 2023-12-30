@@ -27,17 +27,17 @@
                 and innovation.
             </div>
             <nav>
-                <button class="nav-row">
+                <button class="nav-row" id="aboutNav" data-goto="about">
                     <div class="line"></div>
-                    <span id="about">ABOUT</span>
+                    <span>ABOUT</span>
                 </button>
-                <button class="nav-row">
+                <button class="nav-row" id="skillsNav" data-goto="skills">
                     <div class="line"></div>
-                    <span id="skills">SKILLS</span>
+                    <span>SKILLS</span>
                 </button>
-                <button class="nav-row">
+                <button class="nav-row" id="projHeader" data-goto="proj">
                     <div class="line"></div>
-                    <span id="projects">PROJECTS</span>
+                    <span>PROJECTS</span>
                 </button>
             </nav>
         </div>
@@ -77,8 +77,8 @@
     </header>
     <div class="scrollable-content">
         <main>
-            <h2>ABOUT</h2>
-            <section class="about">
+            <h2 id="aboutHeader">ABOUT</h2>
+            <section class="about" id="about">
                 <div class="about__text">
                     <p>
                         In my senior year of high school in 2017, I made the choice to pursue the <span class="highlight-text">ICT</span> (Information & Communication Technology) strand in Dr. Yanga's Colleges. Given my lifelong exposure to computers, this seemed like a natural path for me. During this period, I was introduced to programming for the first time. Although I found it enjoyable and interesting, my exploration of it was limited to school hours and <span class="highlight-text">didn't probe deeper</span>.
@@ -160,8 +160,8 @@
                     </span>
                 </a>
             </section>
-            <h2>SKILLS</h2>
-            <section class="skills">
+            <h2 id="skillsHeader">SKILLS</h2>
+            <section class="skills" id="skills">
                 <div class="skill-container">
                     <div class="skills-content">
                         HTML, CSS, Javascript, PHP, & MySQL
@@ -219,8 +219,8 @@
                     </div>
                 </div>
             </section>
-            <h2>PROJECTS</h2>
-            <section class="projects">
+            <h2 id="projHeader">PROJECTS</h2>
+            <section class="projects" id="proj">
                 <button type="button" class="project-container" data-proj="ischedule">
                     <img src="./assets/imgs/ischedule-img.png" alt="">
                     <div class="project-text">

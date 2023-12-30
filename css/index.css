@@ -152,6 +152,15 @@ body header {
   color: #FFFFFF;
   cursor: pointer;
 }
+.upper-header .selected .line {
+  background-color: #FFFFFF;
+  cursor: pointer;
+  width: 80px;
+}
+.upper-header .selected span {
+  color: #FFFFFF;
+  cursor: pointer;
+}
 
 .lower-header {
   display: flex;

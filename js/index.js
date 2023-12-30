@@ -7,6 +7,9 @@ document.addEventListener("DOMContentLoaded", ()=>{
     goToRepoLink();
     copyText();
     resizeHandler()
+    updateNavBtn();
+    scrollNavDetect();
+    scrollToSection();
     window.addEventListener('resize', resizeHandler);
 })
 
@@ -286,4 +289,67 @@ function copyText(){
             else if(btn.dataset.info == "phone") copyToClipboard("0967 599 8955", "phone");
         });
     });
+}
+
+function updateNavBtn(){
+    let nav = document.querySelectorAll(".nav-row");
+
+    nav.forEach(item=>{
+        item.addEventListener("click", ()=>{
+            selectNewNav(item.dataset.goto);
+        })
+    }) 
+}
+
+function scrollNavDetect(){
+    window.addEventListener("scroll", ()=>{
+        scrollToSection();
+    })
+}
+
+function scrollToSection(){
+    let about = document.querySelector("#about").getBoundingClientRect();
+    let skills = document.querySelector("#skills").getBoundingClientRect();
+    let proj = document.querySelector("#proj").getBoundingClientRect();
+
+    const viewportHeightPercentage = 0.1; // Adjust this percentage based on your preference
+
+    if(proj.top < window.innerHeight ) updateSelectedNavStyle("proj");
+    else if(skills.top < window.innerHeight) updateSelectedNavStyle("skills");
+    else if(about.top <= window.innerHeight) updateSelectedNavStyle("about");
+}
+
+function selectNewNav(navSelected){
+    updateSelectedNavStyle(navSelected);
+
+    let topPosition = document.getElementById(navSelected).offsetTop - 80;
+
+    if(navSelected == "about") topPosition -= 300;
+
+    window.scrollTo({
+        top: topPosition,
+        left: 0,
+        behavior: 'smooth',
+    }); 
+}
+
+function updateSelectedNavStyle(newNav){
+
+    document.querySelectorAll(".nav-row").forEach(remove=>{
+        remove.classList.remove("selected");
+    })
+
+    document.querySelector(`.nav-row[data-goto="${newNav}"]`).classList.add("selected");
+
+}
+
+function isElementInViewport(el) {
+    var rect = el.getBoundingClientRect();
+
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
 }
