@@ -53,23 +53,24 @@ body main {
   width: 100%;
 }
 
-header button {
+header a {
   background-color: transparent;
   border: none;
   font-size: 1.1rem;
   font-weight: 600;
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-flow: row nowrap;
   gap: max(0.5vw, 7px);
   color: #65f6ed;
+  width: -moz-fit-content;
+  width: fit-content;
 }
-header button:hover {
+header a:hover {
   cursor: pointer;
   color: #65f6ed;
 }
-header button:hover .material-icons-outlined {
+header a:hover .material-icons-outlined {
   transform: translate(-8px, 0);
   cursor: pointer;
   color: #65f6ed;

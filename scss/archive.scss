@@ -65,25 +65,25 @@ body{
 }
 
 header{
-    button{
+    a{
         background-color: transparent;
         border: none;
         font-size: 1.1rem;
         font-weight: 600;
         display: flex;
-        justify-content: center;
         align-items: center;
         flex-flow: row nowrap;
         gap: max(0.5vw, 7px);
         color: $tag-font-clr;    
+        width: fit-content;
     }
 
-    button:hover{
+    a:hover{
         cursor: pointer;
         color: $tag-font-clr;
     }
 
-    button:hover .material-icons-outlined{
+    a:hover .material-icons-outlined{
         transform: translate(-8px, 0);
         cursor: pointer;
         color: $tag-font-clr;
