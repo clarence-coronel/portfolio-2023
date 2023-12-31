@@ -4,9 +4,21 @@ document.addEventListener("DOMContentLoaded", ()=>{
 })
 
 function spotlightCursor(){
-    let light = document.getElementById('light');
+    
 
     document.addEventListener('mousemove', function(event) {
+        let light = document.getElementById('light');
+
+        if(!light){
+            let lightEl = document.createElement("div");
+            lightEl.setAttribute("id", "light");
+
+            console.log(lightEl)
+            document.querySelector("body").appendChild(lightEl);
+
+            light = lightEl;
+        }
+            
         // Get the mouse coordinates
         var mouseX = event.clientX;
         var mouseY = event.clientY;

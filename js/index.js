@@ -237,9 +237,20 @@ function copyToClipboard(textToCopy, type) {
 }
 
 function spotlightCursor(){
-    let light = document.getElementById('light');
 
     document.addEventListener('mousemove', function(event) {
+        let light = document.getElementById('light');
+
+        if(!light){
+            let lightEl = document.createElement("div");
+            lightEl.setAttribute("id", "light");
+
+            console.log(lightEl)
+            document.querySelector("body").appendChild(lightEl);
+
+            light = lightEl;
+        }
+            
         // Get the mouse coordinates
         var mouseX = event.clientX;
         var mouseY = event.clientY;
@@ -248,6 +259,7 @@ function spotlightCursor(){
         light.style.left = mouseX - light.offsetWidth / 2 + 'px';
         light.style.top = mouseY - light.offsetHeight / 2 + 'px';
     });
+    
 }
 
 function goToSchoolLink(){
