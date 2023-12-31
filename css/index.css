@@ -76,7 +76,7 @@ body .scrollable-content h2 {
   position: sticky;
   top: 0;
   height: max(6vh, 50px);
-  background-color: rgb(11, 22, 51);
+  background-color: rgb(17, 26, 49);
   z-index: 2;
   margin-bottom: max(-6vh, -60px);
 }
@@ -287,7 +287,7 @@ body header {
     padding: 4vh 5vw;
     flex-flow: column;
     gap: 7vh;
-    background-color: rgb(11, 22, 51);
+    background-color: rgb(17, 26, 49);
   }
   body header, body .scrollable-content {
     flex: unset;

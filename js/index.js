@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
     
     setTimeout(()=>{
         introType(40);
-    }, 2000)
+    }, 500)
     
     window.addEventListener('resize', resizeHandler);
 })
