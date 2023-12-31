@@ -155,6 +155,7 @@ body{
         font-size: 1rem;
         font-weight: 400;
         height: max(7vh, 60px);
+        color: $highlight-font-clr;
     }
 }
 
@@ -226,6 +227,7 @@ body{
     .text{
         font-weight: 400;
         display: inline;
+        color: inherit;
     }
 
     .indicator{

@@ -125,6 +125,7 @@ body header {
   font-size: 1rem;
   font-weight: 400;
   height: max(7vh, 60px);
+  color: rgba(225, 234, 252, 0.8901960784);
 }
 
 .upper-header nav {
@@ -189,6 +190,7 @@ body header {
 .upper-header .text {
   font-weight: 400;
   display: inline;
+  color: inherit;
 }
 .upper-header .indicator {
   font-weight: 400;
