@@ -504,7 +504,7 @@ body{
         border: none;
         padding: max(2vh, 5px) max(1vw, 5px);
         border-radius: 5px;
-        transition-duration: 100ms;
+        transition-duration: 200ms;
 
         display: grid;
         grid-template-columns: 30% 65%;
@@ -518,6 +518,10 @@ body{
 
     .education-btn:hover .school, .education-btn:hover .material-icons-outlined{
         color: $tag-font-clr;
+    }
+
+    .blur{
+        opacity: 0.3;
     }
 
     .text-group{
@@ -611,6 +615,10 @@ body{
             color: $tag-font-clr;
             transform: translate(4px, -4px);
         }
+
+        .blur{
+            opacity: unset;
+        }
         
     }
 
@@ -686,7 +694,7 @@ body{
         border: none;
         text-align: left;
         padding: max(2vh, 5px) max(1vw, 5px);
-        transition-duration: 100ms;
+        transition-duration: 200ms;
         border-radius: 5px;
     }
 
@@ -746,6 +754,10 @@ body{
 
     .projarchive-link:hover .material-icons-outlined{
         color: $tag-font-clr;
+    }
+
+    .blur{
+        opacity: 0.3;
     }
 }
 .project-container{
@@ -843,6 +855,9 @@ body{
             transform: none;
         }
 
+        .blur{
+            opacity: unset;
+        }
 
         .project-text{
             // margin: 0 auto;

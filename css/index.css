@@ -385,7 +385,7 @@ body header {
   border: none;
   padding: max(2vh, 5px) max(1vw, 5px);
   border-radius: 5px;
-  transition-duration: 100ms;
+  transition-duration: 200ms;
   display: grid;
   grid-template-columns: 30% 65%;
   -moz-column-gap: max(1.5vw, 15px);
@@ -397,6 +397,9 @@ body header {
 }
 .about__education .education-btn:hover .school, .about__education .education-btn:hover .material-icons-outlined {
   color: #65f6ed;
+}
+.about__education .blur {
+  opacity: 0.3;
 }
 .about__education .text-group {
   display: flex;
@@ -470,6 +473,9 @@ body header {
     color: #65f6ed;
     transform: translate(4px, -4px);
   }
+  .about__education .blur {
+    opacity: unset;
+  }
 }
 .skills {
   display: flex;
@@ -518,7 +524,7 @@ body header {
   border: none;
   text-align: left;
   padding: max(2vh, 5px) max(1vw, 5px);
-  transition-duration: 100ms;
+  transition-duration: 200ms;
   border-radius: 5px;
 }
 .projects .project-container:hover {
@@ -567,6 +573,9 @@ body header {
 }
 .projects .projarchive-link:hover .material-icons-outlined {
   color: #65f6ed;
+}
+.projects .blur {
+  opacity: 0.3;
 }
 
 .project-container .project-text {
@@ -637,6 +646,9 @@ body header {
   }
   .projects .project-container:hover .material-icons-outlined {
     transform: none;
+  }
+  .projects .blur {
+    opacity: unset;
   }
   .projects .project-text .main:hover {
     cursor: pointer;

@@ -12,10 +12,11 @@ document.addEventListener("DOMContentLoaded", ()=>{
     scrollNavDetect();
     scrollToSection();
     addJumbleSubBtn();
+    onHoverLowerOpacity();
     
     setTimeout(()=>{
         introType(40);
-    }, 500)
+    }, 2000)
     
     window.addEventListener('resize', resizeHandler);
 })
@@ -377,7 +378,7 @@ function introType(speed){
 
     let string = `Passionate about merging design seamlessly with code, specializes
     in crafting captivating digital experiences through continuous learning 
-    and innovation. `;
+    and innovation.`;
 
     let type = setInterval(()=>{
         if(string.length-1 >= index){
@@ -686,4 +687,39 @@ function transToJr(){
             changeToJr();
         }
     }, 25);
+}
+
+function onHoverLowerOpacity(){
+    let educs = document.querySelectorAll(".education-btn");
+    let projs = document.querySelectorAll(".project-container");
+
+    educs.forEach(educ=>{
+        educ.addEventListener("mouseover", ()=>{
+            educs.forEach(button=>{
+                button.classList.add("blur");
+            })
+            educ.classList.remove("blur")
+        })
+
+        educ.addEventListener("mouseout", ()=>{
+            educs.forEach(button=>{
+                button.classList.remove("blur");
+            })
+        })
+    })
+
+    projs.forEach(proj=>{
+        proj.addEventListener("mouseover", ()=>{
+            projs.forEach(button=>{
+                button.classList.add("blur");
+            })
+            proj.classList.remove("blur")
+        })
+
+        proj.addEventListener("mouseout", ()=>{
+            projs.forEach(button=>{
+                button.classList.remove("blur");
+            })
+        })
+    })
 }
