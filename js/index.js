@@ -10,6 +10,11 @@ document.addEventListener("DOMContentLoaded", ()=>{
     updateNavBtn();
     scrollNavDetect();
     scrollToSection();
+    
+    setTimeout(()=>{
+        introType(50);
+    }, 3000)
+    
     window.addEventListener('resize', resizeHandler);
 })
 
@@ -361,4 +366,30 @@ function isStickyElementAtTop(stickyElement) {
       return position === "sticky" && stickyElement.getBoundingClientRect().top === 0;
     }
     return false;
-  }
+}
+
+function introType(speed){
+    const indicator = document.querySelector(".indicator");
+    let introText = document.querySelector(".short-intro .text");
+    let index = 0;
+
+    let string = `Passionate about merging design seamlessly with code, specializes
+    in crafting captivating digital experiences through continuous learning 
+    and innovation. `;
+
+    let type = setInterval(()=>{
+        if(string.length-1 >= index){
+            if(!indicator.classList.contains("indicator-pause")) indicator.classList.add("indicator-pause");
+            introText.innerHTML += string[index];
+            index++;
+        }
+        else{
+            indicator.classList.remove("indicator-pause");
+            removeInterval(type);
+        }
+    }, speed)
+}
+
+function removeInterval(interval){
+    clearInterval(interval)
+}

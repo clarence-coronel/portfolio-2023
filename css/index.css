@@ -114,6 +114,7 @@ body header {
 .upper-header .short-intro {
   font-size: 1rem;
   font-weight: 400;
+  height: max(7vh, 60px);
 }
 
 .upper-header nav {
@@ -163,6 +164,29 @@ body header {
 .upper-header .selected span {
   color: rgba(225, 234, 252, 0.8901960784);
   cursor: pointer;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.upper-header .text {
+  font-weight: 400;
+  display: inline;
+}
+.upper-header .indicator {
+  font-weight: 400;
+  display: inline-block;
+  animation: blink 1s infinite;
+}
+.upper-header .indicator-pause {
+  animation: none;
 }
 
 .lower-header {
@@ -497,7 +521,7 @@ body header {
   border: 2px solid rgba(255, 255, 255, 0.5);
 }
 .projects .project-container:hover img {
-  border-color: rgba(255, 255, 255, 0.5);
+  border-color: rgba(225, 234, 252, 0.8901960784);
 }
 .projects .project-container:hover .main {
   color: #65f6ed;

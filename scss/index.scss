@@ -141,6 +141,7 @@ body{
     .short-intro{
         font-size: 1rem;
         font-weight: 400;
+        height: max(7vh, 60px);
     }
 }
 
@@ -201,6 +202,27 @@ body{
     .selected span{
         color: $highlight-font-clr;
         cursor: pointer;
+    }
+
+    @keyframes blink {
+        0% { opacity: 1; }
+        50% { opacity: 0; }
+        100% { opacity: 1; }
+    }
+
+    .text{
+        font-weight: 400;
+        display: inline;
+    }
+
+    .indicator{
+        font-weight: 400;
+        display: inline-block;
+        animation: blink 1s infinite;
+    }
+
+    .indicator-pause{
+        animation: none;
     }
 }
 .lower-header{
@@ -667,7 +689,7 @@ body{
     }
 
     .project-container:hover img{
-        border-color: lighten($color: $primary-font-clr, $amount: 100);
+        border-color: $highlight-font-clr;
     }
 
     .project-container:hover .main{
