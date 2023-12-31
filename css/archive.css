@@ -115,7 +115,11 @@ table tr {
   align-items: center;
   justify-content: flex-start;
 }
+table .project-header {
+  flex: 2;
+}
 table .project {
+  flex: 2;
   color: rgba(225, 234, 252, 0.8901960784);
 }
 table .project .material-icons-outlined {

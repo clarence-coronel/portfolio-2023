@@ -141,8 +141,13 @@ table{
         justify-content: flex-start;
     }
 
+    .project-header{
+        flex: 2;
+    }
+    
     .project{
         // font-weight: 700;
+        flex: 2;
         color: $highlight-font-clr;
 
         .material-icons-outlined{
