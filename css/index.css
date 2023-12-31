@@ -101,6 +101,16 @@ body header {
   justify-content: flex-start;
   align-items: flex-start;
 }
+.upper-header .intro .sub {
+  transition: color 0.1s;
+}
+.upper-header .intro button {
+  background-color: transparent;
+  border: none;
+}
+.upper-header .intro button:hover {
+  cursor: pointer;
+}
 .upper-header h1 {
   font-weight: 800;
   font-size: 3rem;

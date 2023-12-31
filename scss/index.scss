@@ -124,6 +124,19 @@ body{
         flex-flow: column;
         justify-content: flex-start;
         align-items: flex-start;
+
+        .sub{
+            transition: color 0.1s;
+        }
+
+        button{
+            background-color: transparent;
+            border: none;
+        }
+
+        button:hover{
+            cursor: pointer;
+        }
     }
 
     h1{

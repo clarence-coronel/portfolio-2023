@@ -1,5 +1,6 @@
 // alert("Website is currently in development")
 let change2Check = null;
+let isVisible = true;
 
 document.addEventListener("DOMContentLoaded", ()=>{
     listeners();
@@ -10,6 +11,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
     updateNavBtn();
     scrollNavDetect();
     scrollToSection();
+    addJumbleSubBtn();
     
     setTimeout(()=>{
         introType(40);
@@ -392,4 +394,296 @@ function introType(speed){
 
 function removeInterval(interval){
     clearInterval(interval)
+}
+
+function addJumbleSubBtn(){
+    let btn = document.querySelector(".intro button");
+
+    btn.addEventListener("click", ()=>{
+        btn.disabled = true;
+
+        if(btn.dataset.content == "jr" && btn.dataset.status == "off"){
+            btn.setAttribute("data-status", "on");
+            transToMsg();
+            btn.setAttribute("data-content", "msg");
+        }
+        else if(btn.dataset.content == "msg"  && btn.dataset.status == "off"){
+            btn.setAttribute("data-status", "on");
+            transToJr();
+            btn.setAttribute("data-content", "jr");
+        }
+        
+    })
+    
+}
+
+function jumbleLetter(length){
+    let pool = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+    let jumbled = "";
+
+    for(i = 0; i < length; i++){
+        let randNum = Math.floor(Math.random() * pool.length-1) + 1;
+        jumbled += pool[randNum];
+    }
+    
+
+    return jumbled;
+}
+
+function changeToJr(){
+    let logoText = document.querySelector(".intro .sub");
+    let counter = 0;
+    let morph = setInterval(()=>{
+        counter++;
+        if(counter <= 4){
+            logoText.innerText = "J" + jumbleLetter(13);
+        }
+        else if(counter <= 8){
+            logoText.innerText = "Jr" + jumbleLetter(12);
+        }
+        else if(counter <= 12){
+            logoText.innerText = "Jr. " + jumbleLetter(11);
+        }
+        else if(counter <= 16){
+            logoText.innerText = "Jr. F" + jumbleLetter(10);
+        }
+        else if(counter <= 20){
+            logoText.innerText = "Jr. Fro" + jumbleLetter(9);
+        }
+        else if(counter <= 24){
+            logoText.innerText = "Jr. Fron" + jumbleLetter(8);
+        }
+        else if(counter <= 28){
+            logoText.innerText = "Jr. Front" + jumbleLetter(7);
+        }
+        else if(counter <= 32){
+            logoText.innerText = "Jr. Front-" + jumbleLetter(6);
+        }
+        else if(counter <= 36){
+            logoText.innerText = "Jr. Front-E" + jumbleLetter(5);
+        }
+        else if(counter <= 40){
+            logoText.innerText = "Jr. Front-En" + jumbleLetter(4);
+        }
+        else if(counter <= 44){
+            logoText.innerText = "Jr. Front-End" + jumbleLetter(3);
+        }
+        else if(counter <= 48){
+            logoText.innerText = "Jr. Front-End " + jumbleLetter(2);
+        }
+        else if(counter <= 50){
+            logoText.innerText = "Jr. Front-End D" + jumbleLetter(1);
+        }
+        else if(counter <= 52){
+            logoText.innerText = "Jr. Front-End De" + jumbleLetter(1);
+        }
+        else if(counter <= 54){
+            logoText.innerText = "Jr. Front-End Dev" + jumbleLetter(1);
+        }
+        else if(counter <= 56){
+            logoText.innerText = "Jr. Front-End Deve" + jumbleLetter(1);
+        }
+        else if(counter <= 58){
+            logoText.innerText = "Jr. Front-End Devel" + jumbleLetter(1);
+        }
+        else if(counter <= 60){
+            logoText.innerText = "Jr. Front-End Develo" + jumbleLetter(1);
+        }
+        else if(counter <= 64){
+            logoText.innerText = "Jr. Front-End Develop" + jumbleLetter(1);
+        }
+        else if(counter <= 68){
+            logoText.innerText = "Jr. Front-End Develope" + jumbleLetter(1);
+        }
+        else if(counter <= 72){
+            logoText.innerText = "Jr. Front-End Developer";
+            let btn = document.querySelector(".intro button");
+            btn.setAttribute("data-status", "off");
+            btn.disabled = false;
+        }
+    }, 50);
+}
+
+function changeToMsg(){
+    let logoText = document.querySelector(".intro .sub");
+    let counter = 0;
+    let morph = setInterval(()=>{
+        counter++;
+        if(counter <= 4){
+            logoText.innerText = "I" + jumbleLetter(22);
+        }
+        else if(counter <= 8){
+            logoText.innerText = "I " + jumbleLetter(20);
+        }
+        else if(counter <= 12){
+            logoText.innerText = "I B " + jumbleLetter(18);
+        }
+        else if(counter <= 16){
+            logoText.innerText = "I Bu" + jumbleLetter(16);
+        }
+        else if(counter <= 20){
+            logoText.innerText = "I Bui" + jumbleLetter(14);
+        }
+        else if(counter <= 24){
+            logoText.innerText = "I Buil" + jumbleLetter(12);
+        }
+        else if(counter <= 28){
+            logoText.innerText = "I Build" + jumbleLetter(10);
+        }
+        else if(counter <= 32){
+            logoText.innerText = "I Build " + jumbleLetter(8);
+        }
+        else if(counter <= 36){
+            logoText.innerText = "I Build S" + jumbleLetter(6);
+        }
+        else if(counter <= 40){
+            logoText.innerText = "I Build St" + jumbleLetter(4);
+        }
+        else if(counter <= 44){
+            logoText.innerText = "I Build Stu" + jumbleLetter(2);
+        }
+        else if(counter <= 48){
+            logoText.innerText = "I Build Stuf" + jumbleLetter(1);
+        }
+        else if(counter <= 52){
+            logoText.innerText = "I Build Stuff" + jumbleLetter(1);
+        }
+        else if(counter <= 56){
+            logoText.innerText = "I Build Stuff.";
+            let btn = document.querySelector(".intro button");
+            btn.setAttribute("data-status", "off");
+            btn.disabled = false;
+        }
+    }, 50);
+}
+
+function transToMsg(){
+    let logoText = document.querySelector(".intro .sub");
+    let counter = 0;
+    let morph = setInterval(()=>{
+        counter++;
+        if(counter <= 4){
+            logoText.innerText = "Jr. Front-End Develope" + jumbleLetter(1);
+        }
+        else if(counter <= 8){
+            logoText.innerText = "Jr. Front-End Develop" + jumbleLetter(2);
+        }
+        else if(counter <= 12){
+            logoText.innerText = "Jr. Front-End Develo" + jumbleLetter(3);
+        }
+        else if(counter <= 16){
+            logoText.innerText = "Jr. Front-End Devel" + jumbleLetter(4);
+        }
+        else if(counter <= 20){
+            logoText.innerText = "Jr. Front-End Deve" + jumbleLetter(5);
+        }
+        else if(counter <= 24){
+            logoText.innerText = "Jr. Front-End Dev" + jumbleLetter(6);
+        }
+        else if(counter <= 28){
+            logoText.innerText = "Jr. Front-End De" + jumbleLetter(7);
+        }
+        else if(counter <= 32){
+            logoText.innerText = "Jr. Front-End D" + jumbleLetter(8);
+        }
+        else if(counter <= 36){
+            logoText.innerText = "Jr. Front-End " + jumbleLetter(9);
+        }
+        else if(counter <= 40){
+            logoText.innerText = "Jr. Front-End" + jumbleLetter(10);
+        }
+        else if(counter <= 44){
+            logoText.innerText = "Jr. Front-En" + jumbleLetter(11);
+        }
+        else if(counter <= 48){
+            logoText.innerText = "Jr. Front-E" + jumbleLetter(12);
+        }
+        else if(counter <= 52){
+            logoText.innerText = "Jr. Front-" + jumbleLetter(13);
+        }
+        else if(counter <= 56){
+            logoText.innerText = "Jr. Front" + jumbleLetter(14);
+        }
+        else if(counter <= 60){
+            logoText.innerText = "Jr. Fron" + jumbleLetter(15);
+        }
+        else if(counter <= 64){
+            logoText.innerText = "Jr. Fro" + jumbleLetter(16);
+        }
+        else if(counter <= 68){
+            logoText.innerText = "Jr. Fr" + jumbleLetter(17);
+        }
+        else if(counter <= 72){
+            logoText.innerText = "Jr. F" + jumbleLetter(18);
+        }
+        else if(counter <= 76){
+            logoText.innerText = "Jr. " + jumbleLetter(19);
+        }
+        else if(counter <= 80){
+            logoText.innerText = "Jr." + jumbleLetter(20);
+        }
+        else if(counter <= 84){
+            logoText.innerText = "Jr" + jumbleLetter(21);
+        }
+        else if(counter <= 88){
+            logoText.innerText = "J" + jumbleLetter(22);
+        }
+        else if(counter <= 92){
+            logoText.innerText = jumbleLetter(23);
+            removeInterval(morph);
+            changeToMsg();
+        }
+    }, 25);
+}
+
+function transToJr(){
+    let logoText = document.querySelector(".intro .sub");
+    let counter = 0;
+    let morph = setInterval(()=>{
+        counter++;
+        if(counter <= 4){
+            logoText.innerText = "I Build Stuff" + jumbleLetter(1);
+        }
+        else if(counter <= 8){
+            logoText.innerText = "I Build Stuf" + jumbleLetter(2);
+        }
+        else if(counter <= 12){
+            logoText.innerText = "I Build Stu" + jumbleLetter(3);
+        }
+        else if(counter <= 16){
+            logoText.innerText = "I Build St" + jumbleLetter(4);
+        }
+        else if(counter <= 20){
+            logoText.innerText = "I Build S" + jumbleLetter(5);
+        }
+        else if(counter <= 24){
+            logoText.innerText = "I Build " + jumbleLetter(6);
+        }
+        else if(counter <= 28){
+            logoText.innerText = "I Build" + jumbleLetter(7);
+        }
+        else if(counter <= 32){
+            logoText.innerText = "I Buil" + jumbleLetter(8);
+        }
+        else if(counter <= 36){
+            logoText.innerText = "I Bui" + jumbleLetter(9);
+        }
+        else if(counter <= 40){
+            logoText.innerText = "I Bu" + jumbleLetter(10);
+        }
+        else if(counter <= 44){
+            logoText.innerText = "I B" + jumbleLetter(11);
+        }
+        else if(counter <= 48){
+            logoText.innerText = "I " + jumbleLetter(12);
+        }
+        else if(counter <= 52){
+            logoText.innerText = "I" + jumbleLetter(13);
+        }
+        else if(counter <= 92){
+            logoText.innerText = jumbleLetter(14);
+            removeInterval(morph);
+            changeToJr();
+        }
+    }, 25);
 }
