@@ -143,18 +143,22 @@ table{
 
     .project-header{
         flex: 2;
+        max-width: max(20vw, 290px);
     }
     
     .project{
         // font-weight: 700;
         flex: 2;
         color: $highlight-font-clr;
+        max-width: max(20vw, 290px);
 
         .material-icons-outlined{
             font-size: 0.8rem;
             font-weight: 700;
             color: $highlight-font-clr;
             transition-duration: 100ms;
+
+            word-wrap: break-word;
         }
 
         a {

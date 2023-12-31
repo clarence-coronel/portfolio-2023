@@ -117,16 +117,19 @@ table tr {
 }
 table .project-header {
   flex: 2;
+  max-width: max(20vw, 290px);
 }
 table .project {
   flex: 2;
   color: rgba(225, 234, 252, 0.8901960784);
+  max-width: max(20vw, 290px);
 }
 table .project .material-icons-outlined {
   font-size: 0.8rem;
   font-weight: 700;
   color: rgba(225, 234, 252, 0.8901960784);
   transition-duration: 100ms;
+  word-wrap: break-word;
 }
 table .project a {
   font-weight: 400;
