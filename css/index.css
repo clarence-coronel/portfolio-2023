@@ -16,12 +16,12 @@
 
 ::-moz-selection {
   background-color: #4df5ea;
-  color: rgba(3, 88, 82, 0.5960784314); /* Optional: Change the text color within the highlighted area */
+  color: rgba(2, 58, 54, 0.5960784314); /* Optional: Change the text color within the highlighted area */
 }
 
 ::selection {
   background-color: #4df5ea;
-  color: rgba(3, 88, 82, 0.5960784314); /* Optional: Change the text color within the highlighted area */
+  color: rgba(2, 58, 54, 0.5960784314); /* Optional: Change the text color within the highlighted area */
 }
 
 #light {
@@ -76,7 +76,7 @@ body .scrollable-content h2 {
   position: sticky;
   top: 0;
   height: max(6vh, 50px);
-  background-color: rgb(15, 23, 42);
+  background-color: rgb(17, 26, 49);
   z-index: 2;
   margin-bottom: max(-6vh, -60px);
 }
@@ -277,6 +277,7 @@ body header {
     padding: 4vh 5vw;
     flex-flow: column;
     gap: 7vh;
+    background-color: rgb(17, 26, 49);
   }
   body header, body .scrollable-content {
     flex: unset;
@@ -594,7 +595,7 @@ body header {
   row-gap: max(1vh, 10px);
 }
 .project-container .tags-container .tag {
-  background-color: rgba(3, 88, 82, 0.5960784314);
+  background-color: rgba(2, 58, 54, 0.5960784314);
   color: #65f6ed;
   padding: 5px max(0.7vw, 10px);
   border-radius: 500px;
@@ -602,7 +603,7 @@ body header {
      -moz-user-select: none;
           user-select: none;
   font-size: 0.75rem;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 @media only screen and (max-width: 500px) {

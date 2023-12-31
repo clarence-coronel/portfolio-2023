@@ -93,7 +93,7 @@ body{
         position: sticky;
         top: 0;
         height: max(6vh, 50px);
-        background-color: rgba(15, 23, 42);
+        background-color: $bg-clr-mobile;
         z-index: 2;
         margin-bottom: max(-6vh, -60px);
         
@@ -336,6 +336,7 @@ body{
         padding: 4vh 5vw;
         flex-flow: column;
         gap: 7vh;
+        background-color: $bg-clr-mobile;
 
         header, .scrollable-content{
             flex: unset;
@@ -783,7 +784,7 @@ body{
             border-radius: 500px;
             user-select: none;
             font-size: 0.75rem;
-            font-weight: 400;
+            font-weight: 500;
         }
 
         // .tag:hover{
