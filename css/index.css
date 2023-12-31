@@ -196,6 +196,7 @@ body header {
   font-weight: 400;
   display: inline;
   animation: blink 1s infinite;
+  color: inherit;
 }
 .upper-header .indicator-pause {
   animation: none;
