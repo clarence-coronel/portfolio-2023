@@ -85,7 +85,7 @@ body header {
   top: 0;
   justify-content: space-between;
   height: 100vh;
-  gap: max(10vh, 50px);
+  gap: max(10vh, 80px);
   flex: 0 1 max(450px, 20vw);
   padding-right: 0;
 }
@@ -182,7 +182,7 @@ body header {
 }
 .upper-header .indicator {
   font-weight: 400;
-  display: inline-block;
+  display: inline;
   animation: blink 1s infinite;
 }
 .upper-header .indicator-pause {
@@ -286,7 +286,6 @@ body header {
     position: unset;
     padding: 0;
     justify-content: flex-start;
-    gap: max(4vh, 20px);
     height: -moz-fit-content;
     height: fit-content;
   }

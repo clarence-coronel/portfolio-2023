@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
     scrollToSection();
     
     setTimeout(()=>{
-        introType(50);
+        introType(40);
     }, 3000)
     
     window.addEventListener('resize', resizeHandler);
