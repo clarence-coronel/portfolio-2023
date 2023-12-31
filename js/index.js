@@ -3,7 +3,7 @@ let change2Check = null;
 let isVisible = true;
 
 document.addEventListener("DOMContentLoaded", ()=>{
-    listeners();
+    spotlightCursor();
     goToSchoolLink();
     goToRepoLink();
     copyText();
@@ -170,8 +170,6 @@ function mobileRedirectProj(proj){
     }
 }
 
-
-
 function copyToClipboard(textToCopy, type) {
     clearInterval(change2Check);
     // Create a temporary textarea element
@@ -238,7 +236,7 @@ function copyToClipboard(textToCopy, type) {
     }
 }
 
-function listeners(){
+function spotlightCursor(){
     let light = document.getElementById('light');
 
     document.addEventListener('mousemove', function(event) {

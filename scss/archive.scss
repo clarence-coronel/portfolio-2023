@@ -1,0 +1,247 @@
+@import "./variables";
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    color: $primary-font-clr;
+    z-index: 1;
+    font-weight: 100;
+    text-decoration: none;
+    // line-height: min(4vh, 50px);
+    // letter-spacing: 1px;
+    // line-height: 30px;
+}
+
+:root{
+    font-size: 16px;
+}
+
+::selection {
+    background-color: darken($color: $tag-font-clr, $amount: 5);
+    color: $tag-bg-clr; /* Optional: Change the text color within the highlighted area */
+}
+
+
+#light{
+    width: 50vh;
+    height: 50vh;
+    border-radius: 50%;
+    background-color: rgba(5, 45, 114, 0.2);
+    // box-shadow: 0 0 50px 200px rgba(255, 255, 255, 0.02);
+    box-shadow: 0 0 100px 150px rgba(5, 45, 114, 0.2);
+    position: fixed;
+    z-index: 0;
+    pointer-events: none; /* To allow interaction with elements beneath the circle */
+}
+
+body{
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: $bg-clr;
+    padding: max(3vh, 100px) 2vw;
+    gap: max(5vh, 50px);
+
+    // .content{
+    //     display: flex;
+    //     flex-flow: column;
+    //     flex: 0 1 max(600px, 30vw);
+    //     padding: max(3vh, 100px) 2vw;
+    //     max-width: 600px;
+    // }
+
+    header{
+        max-width: 1200px;
+        width: 100%;
+    }
+
+    main{
+        max-width: 1200px;
+        width: 100%;
+    }
+}
+
+header{
+    button{
+        background-color: transparent;
+        border: none;
+        font-size: 1.1rem;
+        font-weight: 600;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: row nowrap;
+        gap: max(0.5vw, 7px);
+        color: $tag-font-clr;    
+    }
+
+    button:hover{
+        cursor: pointer;
+        color: $tag-font-clr;
+    }
+
+    button:hover .material-icons-outlined{
+        transform: translate(-8px, 0);
+        cursor: pointer;
+        color: $tag-font-clr;
+    }
+
+    h1{
+        color: $highlight-font-clr;
+        font-weight: 800;
+        font-size: 3rem;
+    }
+
+    .material-icons-outlined{
+        font-size: 0.8rem;
+        font-weight: 700;
+        color: $tag-font-clr;
+        transition-duration: 100ms;
+    }
+}
+
+main{
+    
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+
+    th, td{
+        text-align: left;
+        padding: 4vh 1vw;
+        font-weight: 400;
+        height: fit-content;
+
+        flex: 1;
+    }
+
+    th{
+        font-weight: 700;
+        color: $highlight-font-clr;
+        font-size: 1.1rem;
+    }
+
+    td{
+        font-weight: 400;
+    }
+
+    td a{
+        font-weight: 400;
+    }
+
+    tr{
+        display: flex;
+        border-bottom: 1px solid rgba(119, 122, 133, 0.2);
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .project{
+        // font-weight: 700;
+        color: $highlight-font-clr;
+
+        .material-icons-outlined{
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: $highlight-font-clr;
+            transition-duration: 100ms;
+        }
+
+        a {
+            font-weight: 400;
+            color: $highlight-font-clr;
+        }
+
+        a:hover{
+            cursor: pointer;
+            color: $tag-font-clr;
+        }
+    
+        a:hover .material-icons-outlined{
+            transform: translate(4px, -4px);
+            color: $tag-font-clr;
+        }
+    }
+    
+
+    .link-container{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        gap: max(1vw, 15px);
+
+        .material-icons-outlined{
+            font-size: 2rem;
+            color: $primary-font-clr;
+            transition-duration: 100ms;
+        }
+
+        svg{
+            fill: $primary-font-clr;
+            transition-duration: 100ms;
+        }
+
+        a:hover svg{
+            fill: white;
+        }
+    }
+    
+    .tech{
+        flex: 2;
+    }
+
+    .tech-header{
+        flex: 2;
+    }
+
+    .tech-container{
+        display: flex;
+        flex-flow: row wrap;
+        gap: 0.5vw;
+        max-width: 300px;
+        
+        .tag{
+            background-color: $tag-bg-clr;
+            color: $tag-font-clr;
+            padding: 5px max(0.7vw, 10px);
+            border-radius: 500px;
+            user-select: none;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    body{
+        padding: max(5vh, 50px) max(2vw, 20px);
+    }
+    
+    #light{
+        display: none;
+    }
+
+    .type-header,.type, .tech-header, .tech{
+        display: none;
+    }
+
+    .project-header, .project{
+        flex: 4;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .link-header,.link{
+        display: none;
+    }
+
+    .project-header, .project{
+        flex: 4;
+    }
+}
+

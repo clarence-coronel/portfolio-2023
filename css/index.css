@@ -245,7 +245,7 @@ body header {
   transition-duration: 200ms;
 }
 .lower-header .contact-item .material-icons-outlined {
-  font-size: 1rem;
+  font-size: 0.8rem;
   color: rgb(15, 23, 42);
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -345,30 +345,6 @@ body header {
   gap: max(1vh, 20px);
   margin-top: max(3vh, 25px);
 }
-.about .resume-link {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-start;
-  align-items: center;
-  transition-duration: 200ms;
-  gap: max(0.4vw, 5px);
-  font-weight: 700;
-  color: rgba(225, 234, 252, 0.8901960784);
-  width: -moz-fit-content;
-  width: fit-content;
-}
-.about .resume-link:hover {
-  gap: max(0.7vw, 10px);
-  color: #65f6ed;
-}
-.about .resume-link .material-icons-outlined {
-  font-size: 0.7rem;
-  font-weight: 700;
-  color: rgba(225, 234, 252, 0.8901960784);
-}
-.about .resume-link:hover .material-icons-outlined {
-  color: #65f6ed;
-}
 .about p {
   font-weight: 400;
 }
@@ -419,7 +395,7 @@ body header {
   transition-duration: 100ms;
 }
 .about__education .school .material-icons-outlined {
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   color: rgba(225, 234, 252, 0.8901960784);
   transition-duration: 100ms;
 }
@@ -500,6 +476,30 @@ body header {
   font-size: 1rem;
   font-weight: 400;
 }
+.skills .resume-link {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  transition-duration: 200ms;
+  gap: max(0.4vw, 5px);
+  font-weight: 700;
+  color: rgba(225, 234, 252, 0.8901960784);
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.skills .resume-link:hover {
+  gap: max(0.7vw, 10px);
+  color: #65f6ed;
+}
+.skills .resume-link .material-icons-outlined {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: rgba(225, 234, 252, 0.8901960784);
+}
+.skills .resume-link:hover .material-icons-outlined {
+  color: #65f6ed;
+}
 
 @media only screen and (max-width: 500px) {
   .skills .skill-container {
@@ -543,7 +543,7 @@ body header {
   color: #65f6ed;
 }
 .projects .material-icons-outlined {
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   color: inherit;
   transition-duration: 100ms;
 }
@@ -567,7 +567,7 @@ body header {
   color: #65f6ed;
 }
 .projects .projarchive-link .material-icons-outlined {
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   font-weight: 700;
   color: rgba(225, 234, 252, 0.8901960784);
 }
