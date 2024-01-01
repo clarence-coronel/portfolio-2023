@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
     onHoverLowerOpacity();
     
     setTimeout(()=>{
-        introType(40);
+        introType(50);
     }, 2000)
     
     window.addEventListener('resize', resizeHandler);
@@ -393,7 +393,7 @@ function introType(speed){
     let type = setInterval(()=>{
         if(string.length-1 >= index){
             if(!indicator.classList.contains("indicator-pause")) indicator.classList.add("indicator-pause");
-            introText.innerHTML += string[index];
+            introText.append(string[index]);
             index++;
         }
         else{
