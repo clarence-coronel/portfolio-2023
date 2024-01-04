@@ -52,9 +52,9 @@ body{
     //     max-width: 600px;
     // }
 
-    background-image: url("./../assets/imgs/topographic-map.png");
-        background-position: center; 
-        background-attachment: fixed;
+    background-image: url("./../assets/topography.svg");
+    background-position: center; 
+    background-attachment: fixed;
 
     header{
         max-width: 1200px;
@@ -232,6 +232,7 @@ table{
 @media only screen and (max-width: 1200px) {
     body{
         padding: max(5vh, 50px) max(2vw, 20px);
+        background-color: $bg-clr-mobile;
     }
     
     #light{

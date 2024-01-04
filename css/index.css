@@ -41,9 +41,9 @@ body {
   justify-content: center;
   align-items: flex-start;
   gap: max(7vw, 70px);
-  background-color: rgb(16, 25, 46);
+  background-color: rgb(17, 29, 58);
   z-index: -1;
-  background-image: url("./../assets/imgs/topographic-map.png");
+  background-image: url("./../assets/topography.svg");
   background-position: center;
   background-attachment: fixed;
 }
@@ -79,10 +79,10 @@ body .scrollable-content h2 {
   position: sticky;
   top: 0;
   height: max(6vh, 50px);
-  background-color: rgb(12, 24, 51);
+  background-color: rgb(19, 32, 61);
   z-index: 2;
   margin-bottom: max(-6vh, -60px);
-  background-image: url("./../assets/imgs/topographic-map.png");
+  background-image: url("./../assets/topography.svg");
   background-position: center;
   background-attachment: fixed;
 }
@@ -230,7 +230,7 @@ body header {
   border-radius: 0 5px 5px 0;
   padding: 5px;
   font-weight: 700;
-  color: rgb(16, 25, 46);
+  color: rgb(17, 29, 58);
   background-color: #8d8d8d;
   font-size: 0.7rem;
   display: flex;
@@ -255,7 +255,7 @@ body header {
 }
 .lower-header .contact-item .material-icons-outlined {
   font-size: 0.8rem;
-  color: rgb(16, 25, 46);
+  color: rgb(17, 29, 58);
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
@@ -296,7 +296,7 @@ body header {
     padding: 4vh 5vw;
     flex-flow: column;
     gap: 7vh;
-    background-color: rgb(12, 24, 51);
+    background-color: rgb(19, 32, 61);
   }
   body header, body .scrollable-content {
     flex: unset;

@@ -40,10 +40,10 @@ body {
   flex-flow: column;
   justify-content: flex-start;
   align-items: center;
-  background-color: rgb(16, 25, 46);
+  background-color: rgb(17, 29, 58);
   padding: max(3vh, 100px) 2vw;
   gap: max(5vh, 50px);
-  background-image: url("./../assets/imgs/topographic-map.png");
+  background-image: url("./../assets/topography.svg");
   background-position: center;
   background-attachment: fixed;
 }
@@ -192,6 +192,7 @@ table .tech-container .tag {
 @media only screen and (max-width: 1200px) {
   body {
     padding: max(5vh, 50px) max(2vw, 20px);
+    background-color: rgb(19, 32, 61);
   }
   #light {
     display: none;

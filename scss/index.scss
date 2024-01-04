@@ -45,7 +45,7 @@ body{
     // background-color: blue;
     z-index: -1;
 
-        background-image: url("./../assets/imgs/topographic-map.png");
+        background-image: url("./../assets/topography.svg");
         background-position: center; 
         background-attachment: fixed;
 
@@ -101,7 +101,7 @@ body{
         z-index: 2;
         margin-bottom: max(-6vh, -60px);
         
-        background-image: url("./../assets/imgs/topographic-map.png");
+        background-image: url("./../assets/topography.svg");
         background-position: center; 
         background-attachment: fixed;
 
