@@ -43,7 +43,7 @@ body {
   background-color: rgb(16, 25, 46);
   padding: max(3vh, 100px) 2vw;
   gap: max(5vh, 50px);
-  background-image: url("./../assets/test.png");
+  background-image: url("./../assets/imgs/topographic-map.png");
   background-position: center;
   background-attachment: fixed;
 }

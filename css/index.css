@@ -43,7 +43,7 @@ body {
   gap: max(7vw, 70px);
   background-color: rgb(16, 25, 46);
   z-index: -1;
-  background-image: url("./../assets/test.png");
+  background-image: url("./../assets/imgs/topographic-map.png");
   background-position: center;
   background-attachment: fixed;
 }
@@ -82,7 +82,7 @@ body .scrollable-content h2 {
   background-color: rgb(12, 24, 51);
   z-index: 2;
   margin-bottom: max(-6vh, -60px);
-  background-image: url("./../assets/test.png");
+  background-image: url("./../assets/imgs/topographic-map.png");
   background-position: center;
   background-attachment: fixed;
 }
