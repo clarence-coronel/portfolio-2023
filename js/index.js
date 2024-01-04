@@ -168,6 +168,9 @@ function mobileRedirectProj(proj){
     else if(proj == "sketch"){
         window.open("https://clarence-coronel.github.io/top_etch-a-sketch/", "_blank");
     }
+    else if(proj == "nintendo"){
+        window.open("https://youtu.be/BUBPs8jkx3Q", "_blank");
+    }
 }
 
 function copyToClipboard(textToCopy, type) {
@@ -292,6 +295,9 @@ function goToRepoLink(){
                 window.open("https://clarence-coronel.github.io/top_etch-a-sketch/", "_blank");
             }else if(project.dataset.proj == "calculator"){
                 window.open("https://clarence-coronel.github.io/calculator/", "_blank");
+            }
+            else if(project.dataset.proj == "nintendo"){
+                window.open("https://youtu.be/BUBPs8jkx3Q", "_blank");
             }
         })
         
