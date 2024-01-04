@@ -28,8 +28,8 @@
   width: 50vh;
   height: 50vh;
   border-radius: 50%;
-  background-color: rgba(5, 45, 114, 0.2);
-  box-shadow: 0 0 100px 150px rgba(5, 45, 114, 0.2);
+  background-color: rgba(6, 57, 143, 0.2);
+  box-shadow: 0 0 100px 150px rgba(6, 57, 143, 0.2);
   position: fixed;
   z-index: 0;
   pointer-events: none; /* To allow interaction with elements beneath the circle */
@@ -41,8 +41,11 @@ body {
   justify-content: center;
   align-items: flex-start;
   gap: max(7vw, 70px);
-  background-color: rgb(15, 23, 42);
+  background-color: rgb(16, 26, 50);
   z-index: -1;
+  background-image: url("./../assets/test.png");
+  background-position: center;
+  background-attachment: fixed;
 }
 body .highlight-text {
   font-weight: 500;
@@ -76,9 +79,12 @@ body .scrollable-content h2 {
   position: sticky;
   top: 0;
   height: max(6vh, 50px);
-  background-color: rgb(17, 26, 49);
+  background-color: rgb(18, 27, 52);
   z-index: 2;
   margin-bottom: max(-6vh, -60px);
+  background-image: url("./../assets/test.png");
+  background-position: center;
+  background-attachment: fixed;
 }
 body header {
   position: sticky;
@@ -224,7 +230,7 @@ body header {
   border-radius: 0 5px 5px 0;
   padding: 5px;
   font-weight: 700;
-  color: rgb(15, 23, 42);
+  color: rgb(16, 26, 50);
   background-color: #8d8d8d;
   font-size: 0.7rem;
   display: flex;
@@ -249,7 +255,7 @@ body header {
 }
 .lower-header .contact-item .material-icons-outlined {
   font-size: 0.8rem;
-  color: rgb(15, 23, 42);
+  color: rgb(16, 26, 50);
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
@@ -290,7 +296,7 @@ body header {
     padding: 4vh 5vw;
     flex-flow: column;
     gap: 7vh;
-    background-color: rgb(17, 26, 49);
+    background-color: rgb(18, 27, 52);
   }
   body header, body .scrollable-content {
     flex: unset;
