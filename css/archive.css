@@ -40,7 +40,7 @@ body {
   flex-flow: column;
   justify-content: flex-start;
   align-items: center;
-  background-color: rgb(16, 26, 50);
+  background-color: rgb(16, 25, 46);
   padding: max(3vh, 100px) 2vw;
   gap: max(5vh, 50px);
   background-image: url("./../assets/test.png");
