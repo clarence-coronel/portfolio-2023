@@ -28,8 +28,8 @@
     width: 50vh;
     height: 50vh;
     border-radius: 50%;
-    background-color: rgba(6, 57, 143, 0.2);
-    box-shadow: 0 0 100px 150px rgba(6, 57, 143, 0.2);
+    background-color: rgba(6, 50, 125, 0.2);
+    box-shadow: 0 0 100px 150px rgba(6, 50, 125, 0.2);
     position: fixed;
     z-index: 0;
     pointer-events: none; /* To allow interaction with elements beneath the circle */
@@ -54,7 +54,7 @@ body{
 
     background-image: url("./../assets/topography.svg");
     background-position: center; 
-    background-attachment: fixed;
+    // background-attachment: fixed;
 
     header{
         max-width: 1200px;
