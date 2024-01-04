@@ -31,6 +31,7 @@ function resizeHandler(){
 
         disabledProjBtn(true);
         enableListenerProjTxt(true);
+
     }
     else{
         disabledEducBtn(false);
@@ -38,6 +39,8 @@ function resizeHandler(){
 
         disabledProjBtn(false);
         enableListenerProjTxt(false);
+
+        onHoverLowerOpacity();
     }
 }
 
