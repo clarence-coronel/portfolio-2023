@@ -40,7 +40,7 @@ body {
   flex-flow: column;
   justify-content: flex-start;
   align-items: center;
-  background-color: rgb(13, 25, 48);
+  background-color: rgb(9, 22, 47);
   padding: max(3vh, 100px) 2vw;
   gap: max(5vh, 50px);
   background-image: url("./../assets/topography.svg");
@@ -191,7 +191,7 @@ table .tech-container .tag {
 @media only screen and (max-width: 1200px) {
   body {
     padding: max(5vh, 50px) max(2vw, 20px);
-    background-color: rgb(18, 32, 64);
+    background-color: rgb(18, 33, 68);
   }
   #light {
     display: none;
