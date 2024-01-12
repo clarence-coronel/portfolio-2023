@@ -174,6 +174,9 @@ function mobileRedirectProj(proj){
     else if(proj == "nintendo"){
         window.open("https://youtu.be/BUBPs8jkx3Q", "_blank");
     }
+    else if(proj == "tictac"){
+        window.open("https://clarence-coronel.github.io/tic-tac-fighter/", "_blank");
+    }
     else if(proj == "ischeduleadmin"){
         window.open("https://youtu.be/pmj1Z1T57us", "_blank");
     }
@@ -304,6 +307,9 @@ function goToRepoLink(){
             }
             else if(project.dataset.proj == "nintendo"){
                 window.open("https://youtu.be/BUBPs8jkx3Q", "_blank");
+            }
+            else if(project.dataset.proj == "tictac"){
+                window.open("https://clarence-coronel.github.io/tic-tac-fighter/", "_blank");
             }
             else if(project.dataset.proj == "ischeduleadmin"){
                 window.open("https://youtu.be/pmj1Z1T57us", "_blank");
