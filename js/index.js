@@ -180,6 +180,9 @@ function mobileRedirectProj(proj){
     else if(proj == "ischeduleadmin"){
         window.open("https://youtu.be/pmj1Z1T57us", "_blank");
     }
+    else if(proj == "ischedule"){
+        window.open("https://youtu.be/nNwMujc2vDI", "_blank");
+    }
 }
 
 function copyToClipboard(textToCopy, type) {
@@ -313,6 +316,9 @@ function goToRepoLink(){
             }
             else if(project.dataset.proj == "ischeduleadmin"){
                 window.open("https://youtu.be/pmj1Z1T57us", "_blank");
+            }
+            else if(project.dataset.proj == "ischedule"){
+                window.open("https://youtu.be/nNwMujc2vDI", "_blank");
             }
         })
         
