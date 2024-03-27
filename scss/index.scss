@@ -698,15 +698,16 @@ body{
     gap: max(5vh, 50px);
 
     .project-container{
+        min-height: 200px;
         display: grid;
         grid-template-columns: 30% 65%;
         column-gap: max(1.5vw, 15px);
         background-color: transparent;
         border: none;
         text-align: left;
-        padding: max(2vh, 5px) max(1vw, 5px);
+        padding: 2rem max(1vw, 5px);
         transition-duration: 200ms;
-        border-radius: 5px;
+        border-radius: 5px
     }
 
     .project-container:hover{
