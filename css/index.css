@@ -51,7 +51,8 @@ body .highlight-text {
   color: white;
   font-size: 1rem;
 }
-body header, body .scrollable-content {
+body header,
+body .scrollable-content {
   display: flex;
   flex-flow: column;
   flex: 0 1 max(600px, 30vw);
@@ -274,7 +275,9 @@ body header {
 .lower-header .text-copied {
   border-color: rgb(35, 138, 66);
 }
-.lower-header a, .lower-header a:visited, .lower-header a:hover {
+.lower-header a,
+.lower-header a:visited,
+.lower-header a:hover {
   text-decoration: none;
   color: white;
 }
@@ -296,7 +299,8 @@ body header {
     gap: 7vh;
     background-color: rgb(18, 33, 68);
   }
-  body header, body .scrollable-content {
+  body header,
+  body .scrollable-content {
     flex: unset;
     max-width: unset;
   }
@@ -402,7 +406,8 @@ body header {
   cursor: pointer;
   background-color: rgba(255, 255, 255, 0.0705882353);
 }
-.about__education .education-btn:hover .school, .about__education .education-btn:hover .material-icons-outlined {
+.about__education .education-btn:hover .school,
+.about__education .education-btn:hover .material-icons-outlined {
   color: #65f6ed;
 }
 .about__education .blur {
@@ -433,7 +438,10 @@ body header {
 .about__education .education-btn:hover .school .material-icons-outlined {
   transform: translate(4px, -4px);
 }
-.about__education .address, .about__education .course, .about__education .achivement, .about__education .years {
+.about__education .address,
+.about__education .course,
+.about__education .achivement,
+.about__education .years {
   font-size: 0.9rem;
   font-weight: 400;
 }
@@ -466,7 +474,8 @@ body header {
     cursor: default;
     background-color: transparent;
   }
-  .about__education .education-btn:hover .school, .about__education .education-btn:hover .material-icons-outlined {
+  .about__education .education-btn:hover .school,
+  .about__education .education-btn:hover .material-icons-outlined {
     color: rgba(225, 234, 252, 0.8901960784);
   }
   .about__education .education-btn:hover .school .material-icons-outlined {
@@ -531,7 +540,7 @@ body header {
   background-color: transparent;
   border: none;
   text-align: left;
-  padding: 2rem max(1vw, 5px);
+  padding: 2rem 1rem;
   transition-duration: 200ms;
   border-radius: 5px;
 }
