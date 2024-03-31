@@ -175,6 +175,11 @@ function mobileRedirectProj(proj) {
     window.open("https://youtu.be/pmj1Z1T57us", "_blank");
   } else if (proj == "ischedule") {
     window.open("https://youtu.be/nNwMujc2vDI", "_blank");
+  } else if (proj == "pokedex") {
+    window.open(
+      "https://pokedex-henna-nine.vercel.app/?page=1&limit=20",
+      "_blank"
+    );
   }
 }
 
@@ -313,9 +318,11 @@ function goToRepoLink() {
         window.open("https://youtu.be/pmj1Z1T57us", "_blank");
       } else if (project.dataset.proj == "ischedule") {
         window.open("https://youtu.be/nNwMujc2vDI", "_blank");
-      }
-      else if (project.dataset.proj == "pokedex") {
-        window.open("https://pokedex-henna-nine.vercel.app/?page=1", "_blank");
+      } else if (project.dataset.proj == "pokedex") {
+        window.open(
+          "https://pokedex-henna-nine.vercel.app/?page=1&limit=20",
+          "_blank"
+        );
       }
     });
   });
