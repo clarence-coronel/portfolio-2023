@@ -2,6 +2,10 @@
 let change2Check = null;
 let isVisible = true;
 
+setTimeout(() => {
+    changeToMsg()
+}, 30000)
+
 document.addEventListener("DOMContentLoaded", () => {
   spotlightCursor();
   goToSchoolLink();
@@ -11,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
   updateNavBtn();
   scrollNavDetect();
   scrollToSection();
-  addJumbleSubBtn();
+  // addJumbleSubBtn();
   onHoverLowerOpacity();
 
   setTimeout(() => {
