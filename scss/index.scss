@@ -18,9 +18,14 @@
   font-size: 16px;
 }
 
+::-moz-selection {
+  background-color: darken($color: $tag-font-clr, $amount: 5);
+  color: $tag-bg-clr;
+}
+
 ::selection {
   background-color: darken($color: $tag-font-clr, $amount: 5);
-  color: $tag-bg-clr; /* Optional: Change the text color within the highlighted area */
+  color: $tag-bg-clr;
 }
 
 #light {

@@ -16,12 +16,12 @@
 
 ::-moz-selection {
   background-color: #4df5ea;
-  color: rgba(2, 58, 54, 0.5960784314); /* Optional: Change the text color within the highlighted area */
+  color: rgba(2, 58, 54, 0.5960784314);
 }
 
 ::selection {
   background-color: #4df5ea;
-  color: rgba(2, 58, 54, 0.5960784314); /* Optional: Change the text color within the highlighted area */
+  color: rgba(2, 58, 54, 0.5960784314);
 }
 
 #light {
