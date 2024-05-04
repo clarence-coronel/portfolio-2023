@@ -2,9 +2,9 @@
 let change2Check = null;
 let isVisible = true;
 
-setTimeout(() => {
-    changeToMsg()
-}, 30000)
+// setTimeout(() => {
+//     changeToMsg()
+// }, 30000)
 
 document.addEventListener("DOMContentLoaded", () => {
   spotlightCursor();
