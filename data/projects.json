@@ -1,204 +1,137 @@
 {
-    "projects": [
-        {
-            "year": "2024",
-            "name": "Grandline Memory Game",
-            "tech": [
-                "Vue.js",
-                "Tailwind CSS",
-                "Responsive Design"
-            ],
-            "live_url": "https://animanga-archive.vercel.app/?mode=anime&q=&page=1",
-            "repo_url": "https://github.com/clarence-coronel/animanga-archive"
-        },
-        {
-            "year": "2024",
-            "name": "AniManga Archive",
-            "tech": [
-                "React.js",
-                "Tailwind CSS",
-                "Responsive Design"
-            ],
-            "live_url": "https://animanga-archive.vercel.app/?mode=anime&q=&page=1",
-            "repo_url": "https://github.com/clarence-coronel/animanga-archive"
-        },
-        {
-            "year": "2024",
-            "name": "Pokedex",
-            "tech": [
-                "Vue.js",
-                "Tailwind CSS",
-                "Responsive Design"
-            ],
-            "live_url": "https://pokedex-henna-nine.vercel.app/?page=1&limit=20",
-            "repo_url": "https://github.com/Clarence-Coronel/pokedex"
-        },
-        {
-            "year": "2024",
-            "name": "To-Do List",
-            "tech": [
-                "Vue.js",
-                "Tailwind CSS",
-                "Responsive Design"
-            ],
-            "live_url": "https://todo-psi-ten-45.vercel.app",
-            "repo_url": "https://github.com/Clarence-Coronel/todo"
-        },
-        {
-            "year": "2024",
-            "name": "Resume Maker",
-            "tech": [
-                "React.js",
-                "Tailwind CSS",
-                "Responsive Design"
-            ],
-            "live_url": "https://resume-maker-beta-nine.vercel.app",
-            "repo_url": "https://github.com/Clarence-Coronel/resume-maker"
-        },
-        {
-            "year": "2024",
-            "name": "Tic-Tac-Fighter",
-            "tech": [
-                "HTML",
-                "SCSS",
-                "Javascript",
-                "Responsive Design"
-            ],
-            "live_url": "https://clarence-coronel.github.io/tic-tac-fighter/",
-            "repo_url": "https://github.com/Clarence-Coronel/tic-tac-fighter"
-        },
-        {
-            "year": "2024",
-            "name": "Library",
-            "tech": [
-                "HTML",
-                "CSS",
-                "Javascript",
-                "Responsive Design"
-            ],
-            "live_url": "https://clarence-coronel.github.io/library/",
-            "repo_url": "https://github.com/Clarence-Coronel/library"
-        },
-        {
-            "year": "2024",
-            "name": "Dashboard",
-            "tech": [
-                "HTML",
-                "CSS",
-                "Responsive Design"
-            ],
-            "live_url": "https://clarence-coronel.github.io/top_dashboard/",
-            "repo_url": "https://github.com/Clarence-Coronel/top_dashboard"
-        },
-        {
-            "year": "2023",
-            "name": "Sign Up Form",
-            "tech": [
-                "HTML",
-                "CSS",
-                "Javascript",
-                "Responsive Design"
-            ],
-            "live_url": "https://clarence-coronel.github.io/sign-up-form/",
-            "repo_url": "https://github.com/Clarence-Coronel/sign-up-form"
-        },
-        {
-            "year": "2023",
-            "name": "iSchedule Admin",
-            "tech": [
-                "HTML",
-                "SCSS",
-                "Javascript",
-                "Responsive Design",
-                "PHP",
-                "MySQL"
-            ],
-            "live_url": "https://youtu.be/pmj1Z1T57us",
-            "repo_url": "https://github.com/Clarence-Coronel/iScheduleAdmin"
-        },
-        {
-            "year": "2023",
-            "name": "iSchedule",
-            "tech": [
-                "HTML",
-                "SCSS",
-                "Javascript",
-                "Responsive Design",
-                "PHP",
-                "MySQL"
-            ],
-            "live_url": "https://youtu.be/nNwMujc2vDI",
-            "repo_url": "https://github.com/Clarence-Coronel/iSchedule"
-        },
-        {
-            "year": "2023",
-            "name": "Calculator",
-            "tech": [
-                "HTML",
-                "CSS",
-                "Javascript",
-                "Responsive Design"
-            ],
-            "live_url": "https://clarence-coronel.github.io/calculator/",
-            "repo_url": "https://github.com/Clarence-Coronel/calculator"
-        },
-        {
-            "year": "2023",
-            "name": "Etch A Sketch",
-            "tech": [
-                "HTML",
-                "CSS",
-                "Javascript",
-                "Responsive Design"
-            ],
-            "live_url": "https://clarence-coronel.github.io/top_etch-a-sketch/",
-            "repo_url": "https://github.com/Clarence-Coronel/top_etch-a-sketch"
-        },
-        {
-            "year": "2023",
-            "name": "Nintendo",
-            "tech": [
-                "HTML",
-                "CSS",
-                "Bootstrap",
-                "Javascript",
-                "PHP",
-                "XML"
-            ],
-            "live_url": "https://youtu.be/BUBPs8jkx3Q",
-            "repo_url": "https://github.com/Clarence-Coronel/nintendo"
-        },
-        {
-            "year": "2023",
-            "name": "Portfolio Foreign Language 2",
-            "tech": [
-                "HTML",
-                "CSS",
-                "Javascript"
-            ],
-            "live_url": "https://clarence-coronel.github.io/CoronelPorfolioFL/",
-            "repo_url": "https://github.com/Clarence-Coronel/CoronelPorfolioFL"
-        },
-        {
-            "year": "2023",
-            "name": "Rock Paper Scissors",
-            "tech": [
-                "HTML",
-                "CSS",
-                "Javascript"
-            ],
-            "live_url": "https://clarence-coronel.github.io/top_rps/",
-            "repo_url": "https://github.com/Clarence-Coronel/top_rps"
-        },
-        {
-            "year": "2023",
-            "name": "Landing Page",
-            "tech": [
-                "HTML",
-                "CSS"
-            ],
-            "live_url": "https://clarence-coronel.github.io/top_landingpage/",
-            "repo_url": "https://github.com/Clarence-Coronel/top_landingpage"
-        }
-    ]
+  "projects": [
+    {
+      "year": "2024",
+      "name": "Grandline Memory Game",
+      "tech": ["Vue.js", "Tailwind CSS", "Responsive Design"],
+      "live_url": "https://grandline-memory-game.vercel.app",
+      "repo_url": "https://github.com/clarence-coronel/grandline-memory-game"
+    },
+    {
+      "year": "2024",
+      "name": "AniManga Archive",
+      "tech": ["React.js", "Tailwind CSS", "Responsive Design"],
+      "live_url": "https://animanga-archive.vercel.app/?mode=anime&q=&page=1",
+      "repo_url": "https://github.com/clarence-coronel/animanga-archive"
+    },
+    {
+      "year": "2024",
+      "name": "Pokedex",
+      "tech": ["Vue.js", "Tailwind CSS", "Responsive Design"],
+      "live_url": "https://pokedex-henna-nine.vercel.app/?page=1&limit=20",
+      "repo_url": "https://github.com/Clarence-Coronel/pokedex"
+    },
+    {
+      "year": "2024",
+      "name": "To-Do List",
+      "tech": ["Vue.js", "Tailwind CSS", "Responsive Design"],
+      "live_url": "https://todo-psi-ten-45.vercel.app",
+      "repo_url": "https://github.com/Clarence-Coronel/todo"
+    },
+    {
+      "year": "2024",
+      "name": "Resume Maker",
+      "tech": ["React.js", "Tailwind CSS", "Responsive Design"],
+      "live_url": "https://resume-maker-beta-nine.vercel.app",
+      "repo_url": "https://github.com/Clarence-Coronel/resume-maker"
+    },
+    {
+      "year": "2024",
+      "name": "Tic-Tac-Fighter",
+      "tech": ["HTML", "SCSS", "Javascript", "Responsive Design"],
+      "live_url": "https://clarence-coronel.github.io/tic-tac-fighter/",
+      "repo_url": "https://github.com/Clarence-Coronel/tic-tac-fighter"
+    },
+    {
+      "year": "2024",
+      "name": "Library",
+      "tech": ["HTML", "CSS", "Javascript", "Responsive Design"],
+      "live_url": "https://clarence-coronel.github.io/library/",
+      "repo_url": "https://github.com/Clarence-Coronel/library"
+    },
+    {
+      "year": "2024",
+      "name": "Dashboard",
+      "tech": ["HTML", "CSS", "Responsive Design"],
+      "live_url": "https://clarence-coronel.github.io/top_dashboard/",
+      "repo_url": "https://github.com/Clarence-Coronel/top_dashboard"
+    },
+    {
+      "year": "2023",
+      "name": "Sign Up Form",
+      "tech": ["HTML", "CSS", "Javascript", "Responsive Design"],
+      "live_url": "https://clarence-coronel.github.io/sign-up-form/",
+      "repo_url": "https://github.com/Clarence-Coronel/sign-up-form"
+    },
+    {
+      "year": "2023",
+      "name": "iSchedule Admin",
+      "tech": [
+        "HTML",
+        "SCSS",
+        "Javascript",
+        "Responsive Design",
+        "PHP",
+        "MySQL"
+      ],
+      "live_url": "https://youtu.be/pmj1Z1T57us",
+      "repo_url": "https://github.com/Clarence-Coronel/iScheduleAdmin"
+    },
+    {
+      "year": "2023",
+      "name": "iSchedule",
+      "tech": [
+        "HTML",
+        "SCSS",
+        "Javascript",
+        "Responsive Design",
+        "PHP",
+        "MySQL"
+      ],
+      "live_url": "https://youtu.be/nNwMujc2vDI",
+      "repo_url": "https://github.com/Clarence-Coronel/iSchedule"
+    },
+    {
+      "year": "2023",
+      "name": "Calculator",
+      "tech": ["HTML", "CSS", "Javascript", "Responsive Design"],
+      "live_url": "https://clarence-coronel.github.io/calculator/",
+      "repo_url": "https://github.com/Clarence-Coronel/calculator"
+    },
+    {
+      "year": "2023",
+      "name": "Etch A Sketch",
+      "tech": ["HTML", "CSS", "Javascript", "Responsive Design"],
+      "live_url": "https://clarence-coronel.github.io/top_etch-a-sketch/",
+      "repo_url": "https://github.com/Clarence-Coronel/top_etch-a-sketch"
+    },
+    {
+      "year": "2023",
+      "name": "Nintendo",
+      "tech": ["HTML", "CSS", "Bootstrap", "Javascript", "PHP", "XML"],
+      "live_url": "https://youtu.be/BUBPs8jkx3Q",
+      "repo_url": "https://github.com/Clarence-Coronel/nintendo"
+    },
+    {
+      "year": "2023",
+      "name": "Portfolio Foreign Language 2",
+      "tech": ["HTML", "CSS", "Javascript"],
+      "live_url": "https://clarence-coronel.github.io/CoronelPorfolioFL/",
+      "repo_url": "https://github.com/Clarence-Coronel/CoronelPorfolioFL"
+    },
+    {
+      "year": "2023",
+      "name": "Rock Paper Scissors",
+      "tech": ["HTML", "CSS", "Javascript"],
+      "live_url": "https://clarence-coronel.github.io/top_rps/",
+      "repo_url": "https://github.com/Clarence-Coronel/top_rps"
+    },
+    {
+      "year": "2023",
+      "name": "Landing Page",
+      "tech": ["HTML", "CSS"],
+      "live_url": "https://clarence-coronel.github.io/top_landingpage/",
+      "repo_url": "https://github.com/Clarence-Coronel/top_landingpage"
+    }
+  ]
 }
