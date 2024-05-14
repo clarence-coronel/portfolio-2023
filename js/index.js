@@ -184,12 +184,13 @@ function mobileRedirectProj(proj) {
       "https://pokedex-henna-nine.vercel.app/?page=1&limit=20",
       "_blank"
     );
-  }
-  else if (proj == "animanga") {
+  } else if (proj == "animanga") {
     window.open(
       "https://animanga-archive.vercel.app/?mode=anime&q=&page=1",
       "_blank"
     );
+  } else if (proj == "grandline") {
+    window.open("https://grandline-memory-game.vercel.app", "_blank");
   }
 }
 
@@ -338,6 +339,8 @@ function goToRepoLink() {
           "https://animanga-archive.vercel.app/?mode=anime&q=&page=1",
           "_blank"
         );
+      } else if (project.dataset.proj == "grandline") {
+        window.open("https://grandline-memory-game.vercel.app", "_blank");
       }
     });
   });
